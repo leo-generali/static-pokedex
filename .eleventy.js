@@ -14,9 +14,9 @@ module.exports = (config) => {
   });
 
   config.addCollection('pokemonSorted', function(collection) {
-    return [...collection.getFilteredByTag('pokemon')].sort((a, b) => {
-      return a.data.pokemon.id > b.data.pokemon.id;
-    });
+    return [...collection.getFilteredByTag('pokemon')].sort(
+      (a, b) => a.data.pokemon.id - b.data.pokemon.id
+    );
   });
 
   // Filters
@@ -27,6 +27,10 @@ module.exports = (config) => {
   config.addFilter('typeGradient', require('./filters/typeGradient'));
 
   config.addPassthroughCopy('src/assets/images/');
+
+  if (process.env.ELEVENTY_ENV === 'development') {
+    config.addPassthroughCopy('dist/styles/main-development.css');
+  }
 
   return {
     dir: {

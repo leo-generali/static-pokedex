@@ -6,9 +6,7 @@
   <meta http-equiv='X-UA-Compatible' content='ie=edge'>
   <link rel='icon' type='image/ico' href='/favicon.ico' />
   {% include 'partials/meta-info.njk' %}
-  <style>
-    {{ css | safe }}
-  </style>
+  {{ css | safe }}
 </head>
 <body class='min-h-screen bg-gray-100 antialiased flex flex-col text-gray-700'>
   {{ content | safe }}

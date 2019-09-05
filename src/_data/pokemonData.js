@@ -19,14 +19,12 @@ const getCacheKey = () => {
 
 const fetchPokemon = () => {
   const promises = [];
-  for (let i = 1; i <= 10; i++) {
+  for (let i = 1; i <= 151; i++) {
     const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
     promises.push(fetch(url).then((res) => res.json()));
   }
   return Promise.all(promises).then((results) => {
     const data = results.map((result) => {
-      console.log(result.stats);
-
       const orderedStats = result.stats
         .map((stat) => {
           return {
