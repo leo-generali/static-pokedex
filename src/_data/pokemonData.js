@@ -2,6 +2,15 @@ const fetch = require('node-fetch');
 const flatcache = require('flat-cache');
 const path = require('path');
 
+const STAT_NAME_MAP = {
+  defense: 'Defense',
+  hp: 'HP',
+  'special-attack': 'Special Attack',
+  'special-defense': 'Special Defense',
+  attack: 'Attack',
+  speed: 'Speed'
+};
+
 const getCacheKey = () => {
   const date = new Date();
   return `${date.getUTCFullYear()}-${date.getUTCMonth() +
@@ -16,10 +25,23 @@ const fetchPokemon = () => {
   }
   return Promise.all(promises).then((results) => {
     const data = results.map((result) => {
+      console.log(result.stats);
+
+      const orderedStats = result.stats
+        .map((stat) => {
+          return {
+            base_stat: stat.base_stat,
+            name: STAT_NAME_MAP[stat.stat.name],
+            percent: Math.floor((stat.base_stat / 255) * 100)
+          };
+        })
+        .sort((a, b) => a.name > b.name);
+
       return {
         name: result.name,
         image: result.sprites['front_default'],
         types: result.types.map((type) => type.type.name),
+        stats: orderedStats,
         id: result.id
       };
     });
