@@ -91,4 +91,5 @@ dist/
 styles/main-development.css
 styles/main-production.css
 _site/
+_datacache/
 node_modules/

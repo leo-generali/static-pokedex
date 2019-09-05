@@ -1,0 +1,15 @@
+---
+tags: pokemon
+layout: layouts/base.njk
+pagination:
+  data: pokemonData
+  size: 1
+  alias: pokemon
+  addAllPagesToCollections: true
+permalink: pokemon/{{ pokemon.name }}/index.html
+---
+
+<h1>{{ pokemon.name }}</h1>
+
+
+
