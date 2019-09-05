@@ -9,8 +9,9 @@
     {{ css | safe }}
   </style>
 </head>
-<body class='text-gray-700'>
+<body class='min-h-screen bg-gray-100 antialiased flex flex-col text-gray-700'>
   {{ content | safe }}
+  {% include 'partials/footer.njk' %}
   <script>
     {{ js | safe }}
   </script>

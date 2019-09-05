@@ -6,14 +6,14 @@ layout: layouts/base.njk
   <section>
     <h1 class='text-4xl'>Pokemon:</h1>
   </section>
-  <section class='flex flex-wrap'>
+  <section class='text-center'>
     {%- for pokemon in collections.pokemonSorted -%}
-      <a class='p-4 w-64 bg-blue-300 relative rounded-lg overflow-hidden' href="{{ pokemon.url }}">
+      <a class='inline-block p-4 w-full bg-white relative rounded-lg overflow-hidden transition-fast shadow hover:shadow-lg hover:-translate-y-1' href="{{ pokemon.url }}">
         <div class='absolute'>
           <span class='font-bold tracking-wide uppercase w-full'>{{ pokemon.data.pokemon.name | title }}</span>
         </div>
-        <img class='ml-auto' style="z-index: 10" src="{{ pokemon.data.pokemon.image }}" alt="{{ pokemon.data.pokemon.name }}" />
-        <svg class='absolute fill-current text-white opacity-25 w-1/2' style='z-index: 1; right: 0%; bottom: 0%' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path d="M500 10.1c-270.5 0-490 219.4-490 489.8 0 270.5 219.5 490 490 490s490-219.5 490-490S770.5 10.1 500 10.1zm0 343.2c81 0 146.8 65.6 146.8 146.6S581 646.7 500 646.7c-81 0-146.8-65.8-146.8-146.8 0-81 65.8-146.6 146.8-146.6zM84.7 531.4H290c15.2 102.3 103.5 180.7 210 180.7s194.8-78.4 210-180.7h205.3c-16.2 215.2-196 385.1-415.3 385.1S100.8 746.7 84.7 531.4z"/></svg>
+        <img class='ml-auto relative' style="z-index: 10" src="{{ pokemon.data.pokemon.image }}" alt="{{ pokemon.data.pokemon.name }}" />
+        <svg class='absolute fill-current text-gray-500 opacity-25 w-32' style='z-index: 1; right: -4rem; bottom: -2rem' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path d="M500 10.1c-270.5 0-490 219.4-490 489.8 0 270.5 219.5 490 490 490s490-219.5 490-490S770.5 10.1 500 10.1zm0 343.2c81 0 146.8 65.6 146.8 146.6S581 646.7 500 646.7c-81 0-146.8-65.8-146.8-146.8 0-81 65.8-146.6 146.8-146.6zM84.7 531.4H290c15.2 102.3 103.5 180.7 210 180.7s194.8-78.4 210-180.7h205.3c-16.2 215.2-196 385.1-415.3 385.1S100.8 746.7 84.7 531.4z"/></svg>
       </a>
     {%- endfor -%}
   </section>
