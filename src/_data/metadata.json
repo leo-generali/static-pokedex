@@ -1,0 +1,11 @@
+{
+  "title": "StatiDex",
+  "url": "https://www.leogenerali.com",
+  "desc": "Statically generated Pokemon Pokedex!",
+  "baseurl": "",
+  "author": {
+    "name": "Leo Generali"
+  },
+  "twitter_handle": "itsleeohgee",
+  "og_locale": "en_US"
+}

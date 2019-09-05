@@ -6,10 +6,16 @@ pagination:
   size: 1
   alias: pokemon
   addAllPagesToCollections: true
+renderData:
+  title: "{{ pokemon.name }}"
 permalink: pokemon/{{ pokemon.name }}/index.html
 ---
 
-<h1>{{ pokemon.name }}</h1>
+<main class='flex-1'>
+  <section>
+    <h1>{{ pokemon.name | title }}</h1>
+  </section>
+</main>
 
 
 

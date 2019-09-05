@@ -1,3 +1,5 @@
+const path = require('path');
+const fs = require('fs');
 const htmlmin = require('html-minifier');
 
 const POKEMON_TYPE_COLOR_MAP = {
@@ -46,6 +48,17 @@ module.exports = (config) => {
 
   config.addFilter('typeTag', (type) => {
     return `<li class='p-1 rounded text-white mb-1' style='background-color: ${POKEMON_TYPE_COLOR_MAP[type]}'>${type}</li>`;
+  });
+
+  config.addFilter('js', (pageScripts = []) => {
+    const scriptText = pageScripts.map((script) => {
+      return fs.readFileSync(
+        path.join(__dirname, 'dist', `${script}.js`),
+        'utf8'
+      );
+    });
+
+    return scriptText.join('');
   });
 
   return {

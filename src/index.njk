@@ -1,14 +1,22 @@
 ---
 layout: layouts/base.njk
+title: Search
+scripts:
+  - search
 ---
 
-<main class='container mx-auto px-4'>
-  <section>
-    <h1 class='text-4xl'>Pokemon:</h1>
-  </section>
-  <section>
+<main class='flex-1'>
+  <form class='bg-white shadow rounded py-6 mb-2'>
+    <div class='container mx-auto px-4'>
+      <label class='block text-gray-700 text-sm font-bold mb-2' for='pokemon'>
+        Search By Name:
+      </label>
+      <input class='app-pokemon-search-input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id='pokemon' type='text' placeholder='Pokemon Name'>
+    </div>
+  </form>
+  <section class='container mx-auto px-4'>
     {%- for pokemon in collections.pokemonSorted -%}
-      <a class='inline-flex justify-between p-4 mb-2 w-full bg-white relative rounded-lg overflow-hidden transition-fast shadow hover:shadow-lg hover:-translate-y-1' href="{{ pokemon.url }}">
+      <a class='app-pokemon-link inline-flex justify-between p-4 mb-2 w-full bg-white relative rounded-lg overflow-hidden transition-fast shadow hover:shadow-lg hover:-translate-y-1' href='{{ pokemon.url }}' data-pokemon-name="{{ pokemon.data.pokemon.name }}">
         <div class='inline-block w-1/2'>
           <span class='font-bold tracking-wide uppercase w-full mb-2 block'>{{ pokemon.data.pokemon.name | title }}</span>
           <ul class='text-xs font-bold uppercase tracking-wide text-center'>
@@ -17,8 +25,8 @@ layout: layouts/base.njk
             {%- endfor -%}
           </ul>
         </div>
-        <img class='inline-block relative' style="z-index: 10" src="{{ pokemon.data.pokemon.image }}" alt="{{ pokemon.data.pokemon.name }}" />
-        <svg class='absolute fill-current text-gray-500 opacity-25 w-32' style='z-index: 1; right: -4rem; bottom: -2rem' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><path d="M500 10.1c-270.5 0-490 219.4-490 489.8 0 270.5 219.5 490 490 490s490-219.5 490-490S770.5 10.1 500 10.1zm0 343.2c81 0 146.8 65.6 146.8 146.6S581 646.7 500 646.7c-81 0-146.8-65.8-146.8-146.8 0-81 65.8-146.6 146.8-146.6zM84.7 531.4H290c15.2 102.3 103.5 180.7 210 180.7s194.8-78.4 210-180.7h205.3c-16.2 215.2-196 385.1-415.3 385.1S100.8 746.7 84.7 531.4z"/></svg>
+        <img class='inline-block relative' style='z-index: 10' src='{{ pokemon.data.pokemon.image }}' alt='{{ pokemon.data.pokemon.name }}' />
+        <svg class='absolute fill-current text-gray-500 opacity-25 w-32' style='z-index: 1; right: -4rem; bottom: -2rem' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'><path d='M500 10.1c-270.5 0-490 219.4-490 489.8 0 270.5 219.5 490 490 490s490-219.5 490-490S770.5 10.1 500 10.1zm0 343.2c81 0 146.8 65.6 146.8 146.6S581 646.7 500 646.7c-81 0-146.8-65.8-146.8-146.8 0-81 65.8-146.6 146.8-146.6zM84.7 531.4H290c15.2 102.3 103.5 180.7 210 180.7s194.8-78.4 210-180.7h205.3c-16.2 215.2-196 385.1-415.3 385.1S100.8 746.7 84.7 531.4z'/></svg>
       </a>
     {%- endfor -%}
   </section>

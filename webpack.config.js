@@ -38,7 +38,10 @@ module.exports = (env) => {
 
     watch: !isProduction(env),
 
-    entry: './src/assets/packs/index.js',
+    entry: {
+      main: './src/assets/packs/main.js',
+      search: './src/assets/packs/search.js'
+    },
 
     output: {
       path: path.resolve(__dirname, 'dist'),
