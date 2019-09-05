@@ -15,12 +15,14 @@ const fetchPokemon = () => {
     promises.push(fetch(url).then((res) => res.json()));
   }
   return Promise.all(promises).then((results) => {
-    const data = results.map((result) => ({
-      name: result.name,
-      image: result.sprites['front_default'],
-      type: result.types.map((type) => type.type.name).join(', '),
-      id: result.id
-    }));
+    const data = results.map((result) => {
+      return {
+        name: result.name,
+        image: result.sprites['front_default'],
+        types: result.types.map((type) => type.type.name),
+        id: result.id
+      };
+    });
 
     return data;
   });
