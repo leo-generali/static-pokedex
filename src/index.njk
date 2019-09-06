@@ -6,14 +6,7 @@ scripts:
 ---
 
 <main class='flex-1'>
-  <form class='bg-white shadow rounded py-6 mb-2'>
-    <div class='container mx-auto px-4'>
-      <label class='block text-gray-700 text-sm font-bold mb-2' for='pokemon'>
-        Search By Name:
-      </label>
-      <input class='app-pokemon-search-input shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline' id='pokemon' type='text' placeholder='Pokemon Name'>
-    </div>
-  </form>
+  {% include 'partials/search-form.njk' %}
   <section class='container mx-auto px-4'>
     {%- for pokemon in collections.pokemonSorted -%}
       <a class='app-pokemon-link inline-flex justify-between p-4 mb-2 w-full bg-white relative rounded-lg overflow-hidden transition-fast shadow hover:shadow-lg hover:-translate-y-1' href='{{ pokemon.url }}' data-pokemon-name="{{ pokemon.data.pokemon.name }}">
