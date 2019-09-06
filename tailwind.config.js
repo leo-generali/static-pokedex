@@ -7,6 +7,7 @@ module.exports = {
   },
   variants: {
     ...transforms.variants,
+    margin: ['responsive', 'hover', 'last'],
     padding: ['responsive', 'hover']
   },
   plugins: [transitions, ...transforms.plugins, ...grid.plugins]

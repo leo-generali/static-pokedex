@@ -32,7 +32,7 @@ permalink: pokemon/{{ pokemon.name }}/index.html
     </div>
   </section>
   <section class='container mx-auto px-4'>
-    <div class='py-12 -mt-12 bg-white rounded-lg shadow-md px-12'>
+    <div class='py-12 -mt-12 bg-white rounded-lg shadow-md px-8 sm:px-12'>
       <img class='mx-auto mb-4' src="/assets/images/pokemon-gifs/{{ pokemon.name }}.gif" alt="Animated gif of {{ pokemon.name | title }}">
       <p class='font-bold'>{{ pokemon.species }}</p>
       <p class='mb-4'>{{ pokemon.description }}</p>
@@ -57,9 +57,33 @@ permalink: pokemon/{{ pokemon.name }}/index.html
         </li>
         <li class='flex justify-between'>
           <span class='font-bold text-sm uppercase tracking-wide'>Gender Ratio:</span>
-          <span class=''>{{ pokemon.genderRatio.male }}% male / {{ pokemon.genderRatio.female }}% female</span>
+          <span class=''><span class='text-blue-600'>{{ pokemon.genderRatio.male }}% ♂</span> / <span class='text-pink-600'>{{ pokemon.genderRatio.female }}% ♀</span></span>
         </li>
       </ul>
+      <p class='text-2xl font-bold'>Damage Dealt Multiplier:</p>
+      <hr class='mt-2 mb-4' />
+      <div class='grid grid-columns-2 grid-gap-4 mb-4'>
+        <ul class='text-xs font-bold tracking-wide'>
+          {% for weakness in pokemon.typeDefense.weaknesses %}
+            <li class='mb-1 last:mb-0'>
+              <span class='w-2/3 text-white p-1 inline-block rounded uppercase text-center' style='background-color: {{ weakness.type | typeColor }}'>
+                {{ weakness.type }}
+              </span>
+              <p class='inline-block ml-2' style='color: {{ weakness.multiplier | multiplierColor }}'>{{ weakness.multiplier }}x</p>
+            </li>
+          {% endfor %}
+        </ul>
+        <ul class='text-xs font-bold tracking-wide'>
+          {% for resistance in pokemon.typeDefense.resistances %}
+            <li class='mb-1 last:mb-0'>
+              <span class='w-2/3 text-white p-1 inline-block rounded uppercase text-center' style='background-color: {{ resistance.type | typeColor }}'>
+                {{ resistance.type }}
+              </span>
+              <p class='inline-block ml-2' style='color: {{ resistance.multiplier | multiplierColor }}'>{{ resistance.multiplier }}x</p>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
       <p class='text-2xl font-bold'>Stats:</p>
       <hr class='mt-2 mb-4' />
       <div class='w-full'>

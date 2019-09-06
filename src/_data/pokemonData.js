@@ -2,6 +2,7 @@ const fetch = require('node-fetch');
 const flatcache = require('flat-cache');
 const path = require('path');
 const fs = require('fs');
+const typeDefense = require('../../data/typeDefense');
 
 const pokemonDescriptions = JSON.parse(
   fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'descriptions.json'))
@@ -35,7 +36,7 @@ const getCacheKey = () => {
 
 const fetchPokemon = () => {
   const promises = [];
-  for (let i = 1; i <= 151; i++) {
+  for (let i = 1; i <= 4; i++) {
     const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
     promises.push(fetch(url).then((res) => res.json()));
   }
@@ -52,11 +53,12 @@ const fetchPokemon = () => {
         .sort((a, b) => a.name > b.name);
 
       const speciesInfo = pokemonSpeciesInfo[result.id - 1];
+      const types = result.types.map((type) => type.type.name);
 
       return {
         name: result.name,
         image: result.sprites['front_default'],
-        types: result.types.map((type) => type.type.name),
+        types: types,
         stats: orderedStats,
         height: result.height / 10,
         weight: result.weight / 10,
@@ -65,6 +67,7 @@ const fetchPokemon = () => {
         species: speciesInfo.species,
         hatchSteps: speciesInfo.hatchSteps,
         genderRatio: getGenderRation(speciesInfo.genderRatio),
+        typeDefense: typeDefense(types),
         eggGroups: speciesInfo.eggGroups.split(',')
       };
     });
