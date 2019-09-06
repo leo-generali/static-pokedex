@@ -25,6 +25,7 @@ module.exports = (config) => {
   config.addFilter('typeColor', require('./filters/typeColor'));
   config.addFilter('js', require('./filters/js'));
   config.addFilter('typeGradient', require('./filters/typeGradient'));
+  config.addFilter('comma', require('./filters/comma'));
 
   config.addPassthroughCopy('src/assets/images/');
 

@@ -1,6 +1,15 @@
 const fetch = require('node-fetch');
 const flatcache = require('flat-cache');
 const path = require('path');
+const fs = require('fs');
+
+const pokemonDescriptions = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'descriptions.json'))
+);
+
+const pokemonSpeciesInfo = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'speciesInfo.json'))
+);
 
 const STAT_NAME_MAP = {
   defense: 'Defense',
@@ -9,6 +18,13 @@ const STAT_NAME_MAP = {
   'special-defense': 'Special Defense',
   attack: 'Attack',
   speed: 'Speed'
+};
+
+const getGenderRation = (percentMale) => {
+  return {
+    male: percentMale,
+    female: 100 - percentMale
+  };
 };
 
 const getCacheKey = () => {
@@ -35,12 +51,21 @@ const fetchPokemon = () => {
         })
         .sort((a, b) => a.name > b.name);
 
+      const speciesInfo = pokemonSpeciesInfo[result.id - 1];
+
       return {
         name: result.name,
         image: result.sprites['front_default'],
         types: result.types.map((type) => type.type.name),
         stats: orderedStats,
-        id: result.id
+        height: result.height / 10,
+        weight: result.weight / 10,
+        id: result.id,
+        description: pokemonDescriptions[result.id - 1].description,
+        species: speciesInfo.species,
+        hatchSteps: speciesInfo.hatchSteps,
+        genderRatio: getGenderRation(speciesInfo.genderRatio),
+        eggGroups: speciesInfo.eggGroups.split(',')
       };
     });
 
