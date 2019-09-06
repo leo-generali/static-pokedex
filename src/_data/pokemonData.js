@@ -23,6 +23,7 @@ const STAT_NAME_MAP = {
 
 const getGenderRation = (percentMale) => {
   return {
+    notAvailable: percentMale > 100,
     male: percentMale,
     female: 100 - percentMale
   };

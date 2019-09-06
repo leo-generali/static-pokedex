@@ -57,10 +57,16 @@ permalink: pokemon/{{ pokemon.name }}/index.html
         </li>
         <li class='flex justify-between'>
           <span class='font-bold text-sm uppercase tracking-wide'>Gender Ratio:</span>
-          <span class=''><span class='text-blue-600'>{{ pokemon.genderRatio.male }}% ♂</span> / <span class='text-pink-600'>{{ pokemon.genderRatio.female }}% ♀</span></span>
+          <div>
+          {% if pokemon.genderRatio.notAvailable %}
+            <span>Not Available</span>
+          {% else %}
+            <span class='text-blue-600'>{{ pokemon.genderRatio.male }}% ♂</span> / <span class='text-pink-600'>{{ pokemon.genderRatio.female }}% ♀</span>
+          {% endif %}
+          </div>
         </li>
       </ul>
-      <p class='text-2xl font-bold'>Damage Dealt Multiplier:</p>
+      <p class='text-2xl font-bold'>Damage When Attacked:</p>
       <hr class='mt-2 mb-4' />
       <div class='grid grid-columns-2 grid-gap-4 mb-4'>
         <ul class='text-xs font-bold tracking-wide'>
