@@ -138,16 +138,21 @@ const DEFAULT_DAMAGE_TYPES = {
   fairy: 1
 };
 
-module.exports = (pokemonTypes) => {
+const calculateDamageMultiplier = (types) => {
   const damageTypes = { ...DEFAULT_DAMAGE_TYPES };
 
-  pokemonTypes.forEach((pokemonType) => {
-    POKEMON_DAMAGE_MAP.forEach((type) => {
-      if (type.strengths.includes(pokemonType))
-        damageTypes[type.name] = damageTypes[type.name] * 2;
+  types.forEach((type) => {
+    POKEMON_DAMAGE_MAP.forEach((damageMultiplierInfo) => {
+      if (damageMultiplierInfo.strengths.includes(type))
+        damageTypes[damageMultiplierInfo.name] =
+          damageTypes[damageMultiplierInfo.name] * 2;
 
-      if (type.weaknesses.includes(pokemonType))
-        damageTypes[type.name] = damageTypes[type.name] / 2;
+      if (damageMultiplierInfo.weaknesses.includes(type))
+        damageTypes[damageMultiplierInfo.name] =
+          damageTypes[damageMultiplierInfo.name] / 2;
+
+      if (damageMultiplierInfo.immune.includes(type))
+        damageTypes[damageMultiplierInfo.name] = 0;
     });
   });
 
@@ -171,3 +176,5 @@ module.exports = (pokemonTypes) => {
 
   return result;
 };
+
+module.exports = { calculateDamageMultiplier };
