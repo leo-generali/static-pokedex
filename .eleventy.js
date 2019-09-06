@@ -28,6 +28,9 @@ module.exports = (config) => {
   config.addFilter('comma', require('./filters/comma'));
   config.addFilter('multiplierColor', require('./filters/multiplierColor'));
 
+  // Shortcodes
+  config.addShortcode('svg', require('./shortcodes/svg'));
+
   config.addPassthroughCopy('src/assets/images/');
 
   if (process.env.ELEVENTY_ENV === 'development') {
