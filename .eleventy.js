@@ -1,17 +1,6 @@
-const htmlmin = require('html-minifier');
-
 module.exports = (config) => {
-  config.addTransform('htmlmin', function(content, outputPath) {
-    if (outputPath.endsWith('.html')) {
-      const minified = htmlmin.minify(content, {
-        useShortDoctype: true,
-        removeComments: true,
-        collapseWhitespace: true
-      });
-      return minified;
-    }
-    return content;
-  });
+  // Transforms
+  config.addTransform('htmlmin', require('./app/transforms/htmlmin'));
 
   config.addCollection('pokemonSorted', function(collection) {
     return [...collection.getFilteredByTag('pokemon')].sort(
@@ -20,17 +9,18 @@ module.exports = (config) => {
   });
 
   // Filters
-  config.addFilter('padNumber', require('./filters/pad'));
-  config.addFilter('log', require('./filters/log'));
-  config.addFilter('typeColor', require('./filters/typeColor'));
-  config.addFilter('js', require('./filters/js'));
-  config.addFilter('typeGradient', require('./filters/typeGradient'));
-  config.addFilter('comma', require('./filters/comma'));
-  config.addFilter('multiplierColor', require('./filters/multiplierColor'));
+  config.addFilter('padNumber', require('./app/filters/pad'));
+  config.addFilter('log', require('./app/filters/log'));
+  config.addFilter('typeColor', require('./app/filters/typeColor'));
+  config.addFilter('js', require('./app/filters/js'));
+  config.addFilter('typeGradient', require('./app/filters/typeGradient'));
+  config.addFilter('comma', require('./app/filters/comma'));
+  config.addFilter('multiplierColor', require('./app/filters/multiplierColor'));
 
   // Shortcodes
-  config.addShortcode('svg', require('./shortcodes/svg'));
+  config.addShortcode('svg', require('./app/shortcodes/svg'));
 
+  // Passthrough
   config.addPassthroughCopy('src/assets/images/');
 
   if (process.env.ELEVENTY_ENV === 'development') {

@@ -6,6 +6,7 @@ module.exports = (svg, classes) => {
     path.join(
       __dirname,
       '..',
+      '..',
       'src',
       'assets',
       'images',

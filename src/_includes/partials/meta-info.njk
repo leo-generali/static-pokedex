@@ -14,6 +14,8 @@
 
 {% if desc %}
   {% set pageDesc = desc %}
+{% elif renderData.description %}
+  {% set pageDesc = renderData.description %}
 {% else %}
   {% set pageDesc = siteDesc %}
 {% endif %}
