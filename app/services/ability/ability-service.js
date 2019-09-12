@@ -15,6 +15,19 @@ const abilitiesMap = JSON.parse(
   )
 );
 
+const formatEffect = (string) => {
+  return string
+    .replace(/\[+/g, '<strong>')
+    .replace(/]+/g, '</strong>')
+    .replace(/{move:|{type:+/g, '')
+    .replace(
+      /Overworld:+/g,
+      '<span class="italic font-semibold">Overworld: </span>'
+    )
+    .replace(/\{.*?\}/g, '')
+    .replace(/\}/g, '');
+};
+
 const getFromPokemonId = (pokemonId) => {
   return pokemonAbilityMap
     .filter((abilityInfo) => abilityInfo.pokemon_id === pokemonId)
@@ -24,8 +37,8 @@ const getFromPokemonId = (pokemonId) => {
       return {
         name: titleize(ability.name),
         prose: ability.prose,
-        shortEffect: ability.short_effect,
-        longEffect: ability.short_effect,
+        shortEffect: formatEffect(ability.short_effect),
+        longEffect: ability.long_effect.map((effect) => formatEffect(effect)),
         hidden: abilityInfo.is_hidden
       };
     });

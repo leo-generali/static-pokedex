@@ -48,7 +48,9 @@ permalink: pokemon/{{ pokemon.name }}/index.html
               <li class='mb-4 last:mb-0 md:flex items-center'>
                 <div class='w-3/4'>
                   <span class='mb-2 block'><strong>{{ ability.name }}</strong>: {{ ability.prose }}</span>
-                  <p> {{ ability.longEffect }} </p>
+                  {% for effect in ability.longEffect %}
+                    <p class='mb-2 last:mb-0'>{{ effect | safe }}</p>
+                  {% endfor %}
                 </div>
                 {% set commonAbilityClasses = 'block font-bold flex-1 md:text-right mt-2 md:mt-0' %}
                 {% if ability.hidden %}
