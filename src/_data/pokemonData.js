@@ -36,8 +36,6 @@ const fetchPokemon = () => {
       const speciesInfo = pokemonSpeciesInfo[result.id - 1];
       const types = result.types.map((type) => type.type.name);
 
-      console.log(speciesInfo);
-
       return {
         name: result.name,
         types: types,
@@ -67,12 +65,12 @@ module.exports = async function() {
   const key = getCacheKey();
   const cachedPokemonData = cache.getKey(key);
 
-  // if (!cachedPokemonData) {
-  const pokemon = await fetchPokemon();
-  cache.setKey(key, pokemon);
-  cache.save();
-  return pokemon;
-  // }
+  if (!cachedPokemonData) {
+    const pokemon = await fetchPokemon();
+    cache.setKey(key, pokemon);
+    cache.save();
+    return pokemon;
+  }
 
   return cachedPokemonData;
 };
