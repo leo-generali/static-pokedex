@@ -1,38 +1,5 @@
 const pokemonService = require('../pokemon/pokemon-service');
 
-// const RESPONSE = [
-//   {
-//     name: 'HP',
-//     base_stat: 0,
-//     percent: 0
-//   },
-//   {
-//     name: 'Attack',
-//     base_stat: 0,
-//     percent: 0
-//   },
-//   {
-//     name: 'Defense',
-//     base_stat: 0,
-//     percent: 0
-//   },
-//   {
-//     name: 'Speed',
-//     base_stat: 0,
-//     percent: 0
-//   },
-//   {
-//     name: 'Sp. Attack',
-//     base_stat: 0,
-//     percent: 0
-//   },
-//   {
-//     name: 'Sp. Defense',
-//     base_stat: 0,
-//     percent: 0
-//   }
-// ];
-
 const STAT_NAME_MAP = {
   defense: 'Defense',
   hp: 'HP',

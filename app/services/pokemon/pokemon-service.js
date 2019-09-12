@@ -2,9 +2,9 @@ const MAX_STAT = 255;
 
 const getGenderRatio = (percentMale) => {
   return {
-    notAvailable: percentMale > 1,
+    notAvailable: percentMale > 100,
     male: percentMale,
-    female: 1 - percentMale
+    female: 100 - percentMale
   };
 };
 
