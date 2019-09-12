@@ -4,8 +4,9 @@ const path = require('path');
 const fs = require('fs');
 
 // Services
-const typeService = require('../../app/services/type-service');
-const pokemonService = require('../../app/services/pokemon-service');
+const typeService = require('../../app/services/type/type-service');
+const pokemonService = require('../../app/services/pokemon/pokemon-service');
+const dataService = require('../../app/services/data/data-service');
 
 const pokemonDescriptions = JSON.parse(
   fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'descriptions.json'))
@@ -31,22 +32,12 @@ const fetchPokemon = () => {
 
   return Promise.all(promises).then((results) => {
     const data = results.map((result) => {
-      const orderedStats = result.stats
-        .map((stat) => {
-          return {
-            base_stat: stat.base_stat,
-            name: pokemonService.STAT_NAME_MAP[stat.stat.name],
-            percent: pokemonService.calculateMaxStatPercentage(stat.base_stat)
-          };
-        })
-        .sort((a, b) => a.name > b.name);
-
+      const orderedStats = dataService.createOrderedStats(result.stats);
       const speciesInfo = pokemonSpeciesInfo[result.id - 1];
       const types = result.types.map((type) => type.type.name);
 
       return {
         name: result.name,
-        image: result.sprites['front_default'],
         types: types,
         stats: orderedStats,
         height: result.height / 10,
@@ -57,7 +48,11 @@ const fetchPokemon = () => {
         hatchSteps: speciesInfo.hatchSteps,
         genderRatio: pokemonService.getGenderRatio(speciesInfo.genderRatio),
         typeDefense: typeService.calculateDamageMultiplier(types),
-        eggGroups: speciesInfo.eggGroups.split(',')
+        eggGroups: speciesInfo.eggGroups.split(','),
+        image: {
+          indexPage: result.sprites['front_default'],
+          pokedexPage: dataService.pokedexImagePath(result.name)
+        }
       };
     });
 

@@ -21,7 +21,7 @@ module.exports = (config) => {
   config.addShortcode('svg', require('./app/shortcodes/svg'));
 
   // Passthrough
-  config.addPassthroughCopy('src/assets/images/');
+  // config.addPassthroughCopy('src/assets/images/');
 
   if (process.env.ELEVENTY_ENV === 'development') {
     config.addPassthroughCopy('dist/styles/main-development.css');

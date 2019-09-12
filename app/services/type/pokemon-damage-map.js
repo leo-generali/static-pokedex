@@ -1,4 +1,4 @@
-const POKEMON_DAMAGE_MAP = [
+module.exports = [
   {
     name: 'normal',
     immune: ['ghost'],
@@ -116,65 +116,3 @@ const POKEMON_DAMAGE_MAP = [
     strengths: ['fighting', 'dragon', 'dark']
   }
 ];
-
-const DEFAULT_DAMAGE_TYPES = {
-  normal: 1,
-  fire: 1,
-  water: 1,
-  electric: 1,
-  grass: 1,
-  ice: 1,
-  fighting: 1,
-  poison: 1,
-  ground: 1,
-  flying: 1,
-  psychic: 1,
-  bug: 1,
-  rock: 1,
-  ghost: 1,
-  dragon: 1,
-  dark: 1,
-  steel: 1,
-  fairy: 1
-};
-
-const calculateDamageMultiplier = (types) => {
-  const damageTypes = { ...DEFAULT_DAMAGE_TYPES };
-
-  types.forEach((type) => {
-    POKEMON_DAMAGE_MAP.forEach((damageMultiplierInfo) => {
-      if (damageMultiplierInfo.strengths.includes(type))
-        damageTypes[damageMultiplierInfo.name] =
-          damageTypes[damageMultiplierInfo.name] * 2;
-
-      if (damageMultiplierInfo.weaknesses.includes(type))
-        damageTypes[damageMultiplierInfo.name] =
-          damageTypes[damageMultiplierInfo.name] / 2;
-
-      if (damageMultiplierInfo.immune.includes(type))
-        damageTypes[damageMultiplierInfo.name] = 0;
-    });
-  });
-
-  const result = {
-    weaknesses: [],
-    resistances: []
-  };
-
-  Object.entries(damageTypes).forEach((damageType) => {
-    if (damageType[1] > 1)
-      result.weaknesses.push({
-        type: damageType[0],
-        multiplier: damageType[1]
-      });
-    if (damageType[1] < 1)
-      result.resistances.push({
-        type: damageType[0],
-        multiplier: damageType[1]
-      });
-  });
-
-  return result;
-};
-
-module.exports = { calculateDamageMultiplier };
