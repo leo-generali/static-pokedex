@@ -7,6 +7,7 @@ const fs = require('fs');
 const typeService = require('../../app/services/type/type-service');
 const pokemonService = require('../../app/services/pokemon/pokemon-service');
 const dataService = require('../../app/services/data/data-service');
+const abilityService = require('../../app/services/ability/ability-service');
 
 const pokemonDescriptions = JSON.parse(
   fs.readFileSync(path.join(__dirname, '..', '..', 'data', 'descriptions.json'))
@@ -49,6 +50,7 @@ const fetchPokemon = () => {
         genderRatio: pokemonService.getGenderRatio(speciesInfo.genderRatio),
         typeDefense: typeService.calculateDamageMultiplier(types),
         eggGroups: speciesInfo.eggGroups.split(','),
+        abilities: abilityService.getFromPokemonId(result.id),
         image: {
           indexPage: result.sprites['front_default'],
           pokedexPage: dataService.pokedexImagePath(result.name)
@@ -65,12 +67,12 @@ module.exports = async function() {
   const key = getCacheKey();
   const cachedPokemonData = cache.getKey(key);
 
-  if (!cachedPokemonData) {
-    const pokemon = await fetchPokemon();
-    cache.setKey(key, pokemon);
-    cache.save();
-    return pokemon;
-  }
+  // if (!cachedPokemonData) {
+  const pokemon = await fetchPokemon();
+  cache.setKey(key, pokemon);
+  cache.save();
+  return pokemon;
+  // }
 
   return cachedPokemonData;
 };
