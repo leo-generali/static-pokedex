@@ -8,22 +8,22 @@ scripts:
 <main class='flex-1'>
   {% include 'partials/search-form.njk' %}
   <section class='container mx-auto px-4 grid grid-gap-2 sm:grid-gap-4 sm:grid-columns-2 lg:grid-columns-3'>
-    {%- for pokemon in collections.pokemonSorted -%}
+    {% for pokemon in collections.pokemonSorted %}
       <a class='app-pokemon-link inline-flex justify-between p-4 w-full bg-white relative rounded-lg overflow-hidden transition-fast shadow hover:shadow-lg hover:-translate-y-1' href='{{ pokemon.url }}' data-pokemon-name="{{ pokemon.data.pokemon.name }}">
         <div class='inline-block w-1/2'>
           <span class='font-bold tracking-wide uppercase w-full mb-2 block'>{{ pokemon.data.pokemon.name | title }}</span>
           <ul class='text-xs font-bold uppercase tracking-wide text-center'>
-            {%- for type in pokemon.data.pokemon.types -%}
-              <li class='p-1 rounded text-white mb-1' style='background-color: {{ type | typeColor }}'>
+            {% for type in pokemon.data.pokemon.types %}
+              <li class='p-1 rounded text-white mb-1 text-shadow' style='background-color: {{ type | typeColor }}'>
                 {{ type }}
               </li>
-            {%- endfor -%}
+            {% endfor %}
           </ul>
         </div>
-        <img class='inline-block relative' style='z-index: 10' src='{{ pokemon.data.pokemon.image.indexPage }}' alt='{{ pokemon.data.pokemon.name }}' />
+        <img class='inline-block relative z-10' src='{{ pokemon.data.pokemon.image.indexPage }}' alt='{{ pokemon.data.pokemon.name }}' />
         {% svg 'pokeball' | safe %}
       </a>
-    {%- endfor -%}
+    {% endfor %}
   </section>
 </main>
 

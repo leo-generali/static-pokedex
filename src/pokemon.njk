@@ -37,59 +37,65 @@ permalink: pokemon/{{ pokemon.name }}/index.html
       <img class='mx-auto mb-4' src="{{ pokemon.image.pokedexPage }}" alt="Animated gif of {{ pokemon.name | title }}">
       <p class='font-bold'>{{ pokemon.species }}</p>
       <p class='mb-4'>{{ pokemon.description }}</p>
-      <p class='text-2xl font-bold'>Species Data:</p>
-      <hr class='mt-2 mb-4' />
-      <ul class='mb-4'>
-        <li class='flex justify-between'>
-          <span class='font-bold text-sm uppercase tracking-wide'>Height:</span>
-          <span class=''>{{ pokemon.height }} meters</span>
-        </li>
-        <li class='flex justify-between'>
-          <span class='font-bold text-sm uppercase tracking-wide'>Weight:</span>
-          <span class=''>{{ pokemon.weight }} kilograms</span>
-        </li>
-        <li class='flex justify-between'>
-          <span class='font-bold text-sm uppercase tracking-wide'>Steps to Hatch Eggs:</span>
-          <span class=''>{{ pokemon.hatchSteps | comma }}</span>
-        </li>
-        <li class='flex justify-between'>
-          <span class='font-bold text-sm uppercase tracking-wide'>Egg Groups:</span>
-          <span class=''>{{ pokemon.eggGroups }}</span>
-        </li>
-        <li class='flex justify-between'>
-          <span class='font-bold text-sm uppercase tracking-wide'>Gender Ratio:</span>
-          <div>
-          {% if pokemon.genderRatio.notAvailable %}
-            <span>Not Available</span>
-          {% else %}
-            <span class='text-blue-600'>{{ pokemon.genderRatio.male }}% ♂</span> / <span class='text-pink-600'>{{ pokemon.genderRatio.female }}% ♀</span>
-          {% endif %}
+      <div class='lg:grid lg:grid-gap-12 lg:grid-columns-2 lg:mb-4'>
+        <div class='mb-4 lg:mb-0'>
+          <p class='text-2xl font-bold'>Species Data:</p>
+          <hr class='mt-2 mb-4' />
+          <ul>
+            <li class='flex justify-between'>
+              <span class='font-bold text-sm uppercase tracking-wide'>Height:</span>
+              <span class=''>{{ pokemon.height }} meters</span>
+            </li>
+            <li class='flex justify-between'>
+              <span class='font-bold text-sm uppercase tracking-wide'>Weight:</span>
+              <span class=''>{{ pokemon.weight }} kilograms</span>
+            </li>
+            <li class='flex justify-between'>
+              <span class='font-bold text-sm uppercase tracking-wide'>Steps to Hatch Eggs:</span>
+              <span class=''>{{ pokemon.hatchSteps | comma }}</span>
+            </li>
+            <li class='flex justify-between'>
+              <span class='font-bold text-sm uppercase tracking-wide'>Egg Groups:</span>
+              <span class=''>{{ pokemon.eggGroups }}</span>
+            </li>
+            <li class='flex justify-between'>
+              <span class='font-bold text-sm uppercase tracking-wide'>Gender Ratio:</span>
+              <div>
+              {% if pokemon.genderRatio.notAvailable %}
+                <span>Not Available</span>
+              {% else %}
+                <span class='text-blue-600'>{{ pokemon.genderRatio.male }}% ♂</span> / <span class='text-pink-600'>{{ pokemon.genderRatio.female }}% ♀</span>
+              {% endif %}
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class='mb-4 lg:mb-0'>
+          <p class='text-2xl font-bold'>Damage When Attacked:</p>
+          <hr class='mt-2 mb-4' />
+          <div class='grid grid-columns-2 grid-gap-4'>
+            <ul class='text-xs font-bold tracking-wide'>
+              {% for weakness in pokemon.typeDefense.weaknesses %}
+                <li class='mb-1 last:mb-0'>
+                  <span class='w-2/3 text-white p-1 inline-block rounded uppercase text-center text-shadow' style='background-color: {{ weakness.type | typeColor }}'>
+                    {{ weakness.type }}
+                  </span>
+                  <p class='inline-block ml-2' style='color: {{ weakness.multiplier | multiplierColor }}'>{{ weakness.multiplier }}x</p>
+                </li>
+              {% endfor %}
+            </ul>
+            <ul class='text-xs font-bold tracking-wide'>
+              {% for resistance in pokemon.typeDefense.resistances %}
+                <li class='mb-1 last:mb-0'>
+                  <span class='w-2/3 text-white p-1 inline-block rounded uppercase text-center text-shadow' style='background-color: {{ resistance.type | typeColor }}'>
+                    {{ resistance.type }}
+                  </span>
+                  <p class='inline-block ml-2' style='color: {{ resistance.multiplier | multiplierColor }}'>{{ resistance.multiplier }}x</p>
+                </li>
+              {% endfor %}
+            </ul>
           </div>
-        </li>
-      </ul>
-      <p class='text-2xl font-bold'>Damage When Attacked:</p>
-      <hr class='mt-2 mb-4' />
-      <div class='grid grid-columns-2 grid-gap-4 mb-4'>
-        <ul class='text-xs font-bold tracking-wide'>
-          {% for weakness in pokemon.typeDefense.weaknesses %}
-            <li class='mb-1 last:mb-0'>
-              <span class='w-2/3 text-white p-1 inline-block rounded uppercase text-center' style='background-color: {{ weakness.type | typeColor }}'>
-                {{ weakness.type }}
-              </span>
-              <p class='inline-block ml-2' style='color: {{ weakness.multiplier | multiplierColor }}'>{{ weakness.multiplier }}x</p>
-            </li>
-          {% endfor %}
-        </ul>
-        <ul class='text-xs font-bold tracking-wide'>
-          {% for resistance in pokemon.typeDefense.resistances %}
-            <li class='mb-1 last:mb-0'>
-              <span class='w-2/3 text-white p-1 inline-block rounded uppercase text-center' style='background-color: {{ resistance.type | typeColor }}'>
-                {{ resistance.type }}
-              </span>
-              <p class='inline-block ml-2' style='color: {{ resistance.multiplier | multiplierColor }}'>{{ resistance.multiplier }}x</p>
-            </li>
-          {% endfor %}
-        </ul>
+        </div>
       </div>
       <p class='text-2xl font-bold'>Stats:</p>
       <hr class='mt-2 mb-4' />
