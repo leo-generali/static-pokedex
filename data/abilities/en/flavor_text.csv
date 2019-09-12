@@ -1,0 +1,233 @@
+ability_id,version_group_id,language_id,flavor_text
+1,18,9,"By releasing stench when attacking, this Pokémon may cause the target to flinch."
+2,18,9,The Pokémon makes it rain when it enters a battle.
+3,18,9,Its Speed stat is boosted every turn.
+4,18,9,Hard armor protects the Pokémon from critical hits.
+5,18,9,"It cannot be knocked out with one hit. One-hit KO moves cannot knock it out, either."
+6,18,9,"Prevents the use of explosive moves such as Self-Destruct by dampening its surroundings."
+7,18,9,Its limber body protects the Pokémon from paralysis.
+8,18,9,Boosts the Pokémon’s evasion in a sandstorm.
+9,18,9,"The Pokémon is charged with static electricity, so contact with it may cause paralysis."
+10,18,9,"Restores HP if hit by an Electric-type move, instead of taking damage."
+11,18,9,"Restores HP if hit by a Water-type move, instead of taking damage."
+12,18,9,"The Pokémon is oblivious, and that keeps it from being infatuated or falling for taunts."
+13,18,9,Eliminates the effects of weather.
+14,18,9,The Pokémon’s compound eyes boost its accuracy.
+15,18,9,"The Pokémon is suffering from insomnia and cannot fall asleep."
+16,18,9,"The Pokémon’s type becomes the type of the move used on it."
+17,18,9,"The immune system of the Pokémon prevents it from getting poisoned."
+18,18,9,"Powers up the Pokémon’s Fire-type moves if it’s hit by one."
+19,18,9,"This Pokémon’s dust blocks the additional effects of attacks taken."
+20,18,9,"This Pokémon has its own tempo, and that prevents it from becoming confused."
+21,18,9,"This Pokémon uses suction cups to stay in one spot to negate all moves and items that force switching out."
+22,18,9,"The Pokémon intimidates opposing Pokémon upon entering battle, lowering their Attack stat."
+23,18,9,"This Pokémon steps on the opposing Pokémon’s shadow to prevent it from escaping."
+24,18,9,"This Pokémon inflicts damage with its rough skin to the attacker on contact."
+25,18,9,"Its mysterious power only lets supereffective moves hit the Pokémon."
+26,18,9,"By floating in the air, the Pokémon receives full immunity to all Ground-type moves."
+27,18,9,"Contact with the Pokémon may inflict poison, sleep, or paralysis on its attacker."
+28,18,9,"The attacker will receive the same status condition if it inflicts a burn, poison, or paralysis to the Pokémon."
+29,18,9,"Prevents other Pokémon’s moves or Abilities from lowering the Pokémon’s stats."
+30,18,9,"All status conditions heal when the Pokémon switches out."
+31,18,9,"The Pokémon draws in all Electric-type moves. Instead of being hit by Electric-type moves, it boosts its Sp. Atk."
+32,18,9,"Boosts the likelihood of additional effects occurring  when attacking."
+33,18,9,Boosts the Pokémon’s Speed stat in rain.
+34,18,9,Boosts the Pokémon’s Speed stat in harsh sunlight.
+35,18,9,"Raises the likelihood of meeting wild Pokémon by illuminating the surroundings."
+36,18,9,"When it enters a battle, the Pokémon copies an opposing Pokémon’s Ability."
+37,18,9,Doubles the Pokémon’s Attack stat.
+38,18,9,Contact with the Pokémon may poison the attacker.
+39,18,9,"The Pokémon’s intensely focused, and that protects the Pokémon from flinching."
+40,18,9,"The Pokémon is covered with hot magma, which prevents the Pokémon from becoming frozen."
+41,18,9,"The Pokémon is covered with a water veil, which prevents the Pokémon from getting a burn."
+42,18,9,"Prevents Steel-type Pokémon from escaping using its magnetic force."
+43,18,9,"Soundproofing of the Pokémon itself gives full  immunity to all sound-based moves."
+44,18,9,The Pokémon gradually regains HP in rain.
+45,18,9,"The Pokémon summons a sandstorm when it enters a battle."
+46,18,9,"By putting pressure on the opposing Pokémon, it raises their PP usage."
+47,18,9,"The Pokémon is protected by a layer of thick fat, which halves the damage taken from Fire- and Ice-type moves."
+48,18,9,"The Pokémon awakens twice as fast as other Pokémon from sleep."
+49,18,9,Contact with the Pokémon may burn the attacker.
+50,18,9,Enables a sure getaway from wild Pokémon.
+51,18,9,"Keen eyes prevent other Pokémon from lowering this Pokémon’s accuracy."
+52,18,9,"The Pokémon’s proud of its powerful pincers. They prevent other Pokémon from lowering its Attack stat."
+53,18,9,"The Pokémon may pick up the item an opposing Pokémon used during a battle. It may pick up items outside of battle, too."
+54,18,9,"The Pokémon can’t use a move the following turn if it uses one." 55,18,9,"Boosts the Attack stat, but lowers accuracy."
+56,18,9,Contact with the Pokémon may cause infatuation.
+57,18,9,"Boosts the Sp. Atk stat of the Pokémon if an ally with the Plus or Minus Ability is also in battle."
+58,18,9,"Boosts the Sp. Atk stat of the Pokémon if an ally with the Plus or Minus Ability is also in battle."
+59,18,9,"The Pokémon transforms with the weather to change its type to Water, Fire, or Ice."
+60,18,9,"Items held by the Pokémon are stuck fast and cannot be removed by other Pokémon."
+61,18,9,"The Pokémon may heal its own status conditions by shedding its skin."
+62,18,9,"It’s so gutsy that having a status condition boosts the Pokémon’s Attack stat."
+63,18,9,"The Pokémon’s marvelous scales boost the Defense stat if it has a status condition."
+64,18,9,"Oozed liquid has strong stench, which damages attackers using any draining move."
+65,18,9,"Powers up Grass-type moves when the Pokémon’s HP is low."
+66,18,9,"Powers up Fire-type moves when the Pokémon’s HP is low."
+67,18,9,"Powers up Water-type moves when the Pokémon’s HP is low."
+68,18,9,"Powers up Bug-type moves when the Pokémon’s HP is low."
+69,18,9,Protects the Pokémon from recoil damage.
+70,18,9,"Turns the sunlight harsh when the Pokémon enters a battle."
+71,18,9,Prevents opposing Pokémon from fleeing.
+72,18,9,"The Pokémon is full of vitality, and that prevents it from falling asleep."
+73,18,9,"The Pokémon is protected by its white smoke, which prevents other Pokémon from lowering its stats."
+74,18,9,"Using its pure power, the Pokémon doubles its Attack stat."
+75,18,9,A hard shell protects the Pokémon from critical hits.
+76,18,9,Eliminates the effects of weather.
+77,18,9,Raises evasion if the Pokémon is confused.
+78,18,9,"Boosts its Speed stat if hit by an Electric-type move, instead of taking damage."
+79,18,9,"Becomes competitive and deals more damage to Pokémon of the same gender, but deals less to Pokémon of the opposite gender."
+80,18,9,"The Pokémon’s determination boosts the Speed stat each time the Pokémon flinches."
+81,18,9,Boosts evasion in a hailstorm.
+82,18,9,"Makes the Pokémon eat a held Berry when its HP drops to half or less, which is sooner than usual."
+83,18,9,"The Pokémon is angered when it takes a critical hit, and that maxes its Attack stat."
+84,18,9,"Boosts the Speed stat if the Pokémon’s held item is  used or lost."
+85,18,9,"The heatproof body of the Pokémon halves the damage from Fire-type moves that hit it."
+86,18,9,The stat changes the Pokémon receives are doubled.
+87,18,9,"Restores HP in rain or when hit by Water-type moves. Reduces HP in harsh sunlight, and increases the damage received from Fire-type moves."
+88,18,9,"Compares an opposing Pokémon’s Defense and Sp. Def stats before raising its own Attack or Sp. Atk stat—whichever will be more effective."
+89,18,9,Powers up punching moves.
+90,18,9,"Restores HP if the Pokémon is poisoned, instead of losing HP."
+91,18,9,Powers up moves of the same type as the Pokémon.
+92,18,9,"Maximizes the number of times multi-strike moves hit."
+93,18,9,Heals status conditions if it’s raining.
+94,18,9,"Boosts the Sp. Atk stat in harsh sunlight, but HP decreases every turn."
+95,18,9,"Boosts the Speed stat if the Pokémon has a status condition."
+96,18,9,"All the Pokémon’s moves become Normal type. The power of those moves is boosted a little."
+97,18,9,"Powers up moves if they become critical hits when attacking."
+98,18,9,The Pokémon only takes damage from attacks.
+99,18,9,"The Pokémon employs no-guard tactics to ensure incoming and outgoing attacks always land."
+100,18,9,The Pokémon moves after all other Pokémon do.
+101,18,9,Powers up the Pokémon’s weaker moves.
+102,18,9,Prevents status conditions in harsh sunlight.
+103,18,9,The Pokémon can’t use any held items.
+104,18,9,"Moves can be used on the target regardless of its Abilities."
+105,18,9,"The Pokémon is so lucky that the critical-hit ratios of its moves are boosted."
+106,18,9,"Damages the attacker if it contacts the Pokémon with a finishing hit."
+107,18,9,"The Pokémon can sense an opposing Pokémon’s dangerous moves."
+108,18,9,"When it enters a battle, the Pokémon can tell one of the moves an opposing Pokémon has."
+109,18,9,"When attacking, the Pokémon ignores the target Pokémon’s stat changes."
+110,18,9,"The Pokémon can use “not very effective” moves to deal regular damage."
+111,18,9,Reduces the power of supereffective attacks taken.
+112,18,9,"For five turns, the Pokémon’s Attack and Speed stats are halved."
+113,18,9,"The Pokémon can hit Ghost-type Pokémon with Normal- and Fighting-type moves."
+114,18,9,"Draws in all Water-type moves. Instead of being hit  by Water-type moves, it boosts its Sp. Atk."
+115,18,9,The Pokémon gradually regains HP in a hailstorm.
+116,18,9,Reduces the power of supereffective attacks taken.
+117,18,9,"The Pokémon summons a hailstorm when it enters a battle."
+118,18,9,The Pokémon may gather Honey after a battle.
+119,18,9,"When it enters a battle, the Pokémon can check an opposing Pokémon’s held item."
+120,18,9,Powers up moves that have recoil damage.
+121,18,9,"Changes the Pokémon’s type to match the Plate or Z-Crystal it holds."
+122,18,9,"Boosts the Attack and Sp. Def stats of itself and allies in harsh sunlight."
+123,18,9,Reduces the HP of sleeping opposing Pokémon.
+124,18,9,"Steals an item from an attacker that made direct contact."
+125,18,9,"Removes additional effects to increase the power of moves when attacking."
+126,18,9,Makes stat changes have an opposite effect.
+127,18,9,"Unnerves opposing Pokémon and makes them unable to eat Berries."
+128,18,9,"Boosts the Pokémon’s Attack stat sharply when its stats are lowered."
+129,18,9,"Halves the Pokémon’s Attack and Sp. Atk stats when its HP becomes half or less."
+130,18,9,May disable a move used on the Pokémon.
+131,18,9,Sometimes heals an ally’s status condition.
+132,18,9,Reduces damage done to allies.
+133,18,9,"Physical attacks to the Pokémon lower its Defense stat but sharply raise its Speed stat."
+134,18,9,Doubles the Pokémon’s weight.
+135,18,9,Halves the Pokémon’s weight.
+136,18,9,"Reduces the amount of damage the Pokémon takes when its HP is full."
+137,18,9,"Powers up physical attacks when the Pokémon is poisoned."
+138,18,9,"Powers up special attacks when the Pokémon is burned."
+139,18,9,May create another Berry after one is used.
+140,18,9,Anticipates an ally’s attack and dodges it.
+141,18,9,"Raises one stat sharply and lowers another every turn."
+142,18,9,"Protects the Pokémon from things like sand, hail, and powder."
+143,18,9,"May poison a target when the Pokémon makes contact."
+144,18,9,Restores a little HP when withdrawn from battle.
+145,18,9,"Protects the Pokémon from Defense-lowering effects."
+146,18,9,Boosts the Pokémon’s Speed stat in a sandstorm.
+147,18,9,Makes status moves more likely to miss.
+148,18,9,Boosts move power when the Pokémon moves last.
+149,18,9,"Comes out disguised as the Pokémon in the party’s last spot."
+150,18,9,"The Pokémon transforms itself into the Pokémon it’s facing."
+151,18,9,"Passes through the opposing Pokémon’s barrier, substitute, and the like and strikes."
+152,18,9,"Contact with the Pokémon changes the attacker’s Ability to Mummy."
+153,18,9,"The Pokémon shows moxie, and that boosts the Attack stat after knocking out any Pokémon."
+154,18,9,"Being hit by a Dark-type move boosts the Attack stat of the Pokémon, for justice."
+155,18,9,"Dark-, Ghost-, and Bug-type moves scare the Pokémon and boost its Speed stat."
+156,18,9,"Reflects status moves, instead of getting hit by them."
+157,18,9,"Boosts the Attack stat if hit by a Grass-type move, instead of taking damage."
+158,18,9,Gives priority to a status move.
+159,18,9,"Boosts the power of Rock-, Ground-, and Steel-type moves in a sandstorm."
+160,18,9,"Inflicts damage to the attacker on contact with iron barbs."
+161,18,9,"Changes the Pokémon’s shape when HP is half or less."
+162,18,9,Boosts the accuracy of its allies and itself.
+163,18,9,"Moves can be used on the target regardless of its Abilities."
+164,18,9,"Moves can be used on the target regardless of its Abilities."
+165,18,9,"Protects itself and its allies from attacks that limit their move choices."
+166,18,9,"Ally Grass-type Pokémon are protected from status conditions and the lowering of their stats."
+167,18,9,Restores HP as well when the Pokémon eats a Berry.
+168,18,9,"Changes the Pokémon’s type to the type of the move it’s about to use."
+169,18,9,Halves the damage from physical moves.
+170,18,9,"The Pokémon steals the held item of a Pokémon it hits with a move."
+171,18,9,"Protects the Pokémon from some ball and bomb moves."
+172,18,9,"Boosts the Sp. Atk stat sharply when a stat is lowered."
+173,18,9,"The Pokémon’s strong jaw boosts the power of its biting moves."
+174,18,9,"Normal-type moves become Ice-type moves. The power of those moves is boosted a little."
+175,18,9,Prevents itself and ally Pokémon from falling asleep.
+176,18,9,"The Pokémon changes its form to Blade Forme when it uses an attack move, and changes to Shield Forme when it uses King’s Shield."
+177,18,9,"Gives priority to Flying-type moves when the  Pokémon’s HP is full."
+178,18,9,Powers up aura and pulse moves.
+179,18,9,"Boosts the Pokémon’s Defense stat in  Grassy Terrain."
+180,18,9,"The Pokémon passes its item to an ally that has used up an item."
+181,18,9,Powers up moves that make direct contact.
+182,18,9,"Normal-type moves become Fairy-type moves. The power of those moves is boosted a little."
+183,18,9,"Contact with the Pokémon lowers the attacker’s Speed stat."
+184,18,9,"Normal-type moves become Flying-type moves. The power of those moves is boosted a little."
+185,18,9,Parent and child each attacks.
+186,18,9,Powers up each Pokémon’s Dark-type moves.
+187,18,9,Powers up each Pokémon’s Fairy-type moves.
+188,18,9,"The effects of “Aura” Abilities are reversed to lower the power of affected moves."
+189,18,9,"The Pokémon changes the weather to nullify Fire-type attacks."
+190,18,9,"The Pokémon changes the weather to nullify Water-type attacks."
+191,18,9,"The Pokémon changes the weather to eliminate all of the Flying type’s weaknesses."
+192,18,9,Boosts the Defense stat when hit by an attack.
+193,18,9,"The Pokémon cowardly switches out when its HP becomes half or less."
+194,18,9,"The Pokémon, sensing danger, switches out when its HP becomes half or less."
+195,18,9,"Boosts the Pokémon’s Defense stat sharply when hit by a Water-type move."
+196,18,9,"The Pokémon’s attacks become critical hits if the target is poisoned."
+197,18,9,"When its HP becomes half or less, the Pokémon’s shell breaks and it becomes aggressive."
+198,18,9,"Doubles the damage dealt to the target’s replacement if the target switches out."
+199,18,9,"Lowers the power of Fire-type moves done to the Pokémon and prevents the Pokémon from getting a burn."
+200,18,9,Powers up Steel-type moves.
+201,18,9,"Boosts the Pokémon’s Sp. Atk stat when it takes a  hit that causes its HP to become half or less."
+202,18,9,Boosts the Pokémon’s Speed stat in a hailstorm.
+203,18,9,"The Pokémon uses its moves without making contact with the target."
+204,18,9,All sound-based moves become Water-type moves.
+205,18,9,Gives priority to a healing move.
+206,18,9,"Normal-type moves become Electric-type moves. The power of those moves is boosted a little."
+207,18,9,"Doubles the Pokémon’s Speed stat on Electric Terrain."
+208,18,9,"When it has a lot of HP, the Pokémon forms a powerful school. It stops schooling when its HP is low."
+209,18,9,"Once per battle, the shroud that covers the Pokémon can protect it from an attack."
+210,18,9,"Defeating an opposing Pokémon strengthens the Pokémon’s bond with its Trainer, and it becomes Ash-Greninja. Water Shuriken gets more powerful."
+211,18,9,"Other Cells gather to aid when its HP becomes half or less. Then the Pokémon changes its form to Complete Forme."
+212,18,9,"The Pokémon can poison the target even if it’s a Steel or Poison type."
+213,18,9,"It’s always drowsing and will never wake up. It can attack without waking up."
+214,18,9,"Its majesty pressures the opposing Pokémon, making it unable to attack using priority moves."
+215,18,9,"Damages the attacker landing the finishing hit by the amount equal to its last HP."
+216,18,9,"When another Pokémon uses a dance move, it can use a dance move following it regardless of its Speed."
+217,18,9,Powers up ally Pokémon’s special moves.
+218,18,9,"Halves the damage taken from moves that make direct contact, but doubles that of Fire-type moves."
+219,18,9,"Surprises the opposing Pokémon, making it unable to attack using priority moves."
+220,18,9,Boosts its Sp. Atk stat every time a Pokémon faints.
+221,18,9,"Contact with the Pokémon lowers the attacker’s Speed stat."
+222,18,9,The Pokémon copies the Ability of a defeated ally.
+223,18,9,The Pokémon copies the Ability of a defeated ally.
+224,18,9,"The Pokémon boosts its most proficient stat each time it knocks out a Pokémon."
+225,18,9,"Changes the Pokémon’s type to match the memory disc it holds."
+226,18,9,"Turns the ground into Electric Terrain when the Pokémon enters a battle."
+227,18,9,"Turns the ground into Psychic Terrain when the Pokémon enters a battle."
+228,18,9,"Turns the ground into Misty Terrain when the Pokémon enters a battle."
+229,18,9,"Turns the ground into Grassy Terrain when the Pokémon enters a battle."
+230,18,9,"Prevents other Pokémon’s moves or Abilities from lowering the Pokémon’s stats."
+231,18,9,"Reduces the amount of damage the Pokémon takes while its HP is full."
+232,18,9,Reduces the power of supereffective attacks taken.
+233,18,9,Powers up moves that are super effective.

@@ -1,0 +1,294 @@
+ability_id,local_language_id,name
+1,9,Stench
+2,9,Drizzle
+3,9,Speed Boost
+4,9,Battle Armor
+5,9,Sturdy
+6,9,Damp
+7,9,Limber
+8,9,Sand Veil
+9,9,Static
+10,9,Volt Absorb
+11,9,Water Absorb
+12,9,Oblivious
+13,9,Cloud Nine
+14,9,Compound Eyes
+15,9,Insomnia
+16,9,Color Change
+17,9,Immunity
+18,9,Flash Fire
+19,9,Shield Dust
+20,9,Own Tempo
+21,9,Suction Cups
+22,9,Intimidate
+23,9,Shadow Tag
+24,9,Rough Skin
+25,9,Wonder Guard
+26,9,Levitate
+27,9,Effect Spore
+28,9,Synchronize
+29,9,Clear Body
+30,9,Natural Cure
+31,9,Lightning Rod
+32,9,Serene Grace
+33,9,Swift Swim
+34,9,Chlorophyll
+35,9,Illuminate
+36,9,Trace
+37,9,Huge Power
+38,9,Poison Point
+39,9,Inner Focus
+40,9,Magma Armor
+41,9,Water Veil
+42,9,Magnet Pull
+43,9,Soundproof
+44,9,Rain Dish
+45,9,Sand Stream
+46,9,Pressure
+47,9,Thick Fat
+48,9,Early Bird
+49,9,Flame Body
+50,9,Run Away
+51,9,Keen Eye
+52,9,Hyper Cutter
+53,9,Pickup
+54,9,Truant
+55,9,Hustle
+56,9,Cute Charm
+57,9,Plus
+58,9,Minus
+59,9,Forecast
+60,9,Sticky Hold
+61,9,Shed Skin
+62,9,Guts
+63,9,Marvel Scale
+64,9,Liquid Ooze
+65,9,Overgrow
+66,9,Blaze
+67,9,Torrent
+68,9,Swarm
+69,9,Rock Head
+70,9,Drought
+71,9,Arena Trap
+72,9,Vital Spirit
+73,9,White Smoke
+74,9,Pure Power
+75,9,Shell Armor
+76,9,Air Lock
+77,9,Tangled Feet
+78,9,Motor Drive
+79,9,Rivalry
+80,9,Steadfast
+81,9,Snow Cloak
+82,9,Gluttony
+83,9,Anger Point
+84,9,Unburden
+85,9,Heatproof
+86,9,Simple
+87,9,Dry Skin
+88,9,Download
+89,9,Iron Fist
+90,9,Poison Heal
+91,9,Adaptability
+92,9,Skill Link
+93,9,Hydration
+94,9,Solar Power
+95,9,Quick Feet
+96,9,Normalize
+97,9,Sniper
+98,9,Magic Guard
+99,9,No Guard
+100,9,Stall
+101,9,Technician
+102,9,Leaf Guard
+103,9,Klutz
+104,9,Mold Breaker
+105,9,Super Luck
+106,9,Aftermath
+107,9,Anticipation
+108,9,Forewarn
+109,9,Unaware
+110,9,Tinted Lens
+111,9,Filter
+112,9,Slow Start
+113,9,Scrappy
+114,9,Storm Drain
+115,9,Ice Body
+116,9,Solid Rock
+117,9,Snow Warning
+118,9,Honey Gather
+119,9,Frisk
+120,9,Reckless
+121,9,Multitype
+122,9,Flower Gift
+123,9,Bad Dreams
+124,9,Pickpocket
+125,9,Sheer Force
+126,9,Contrary
+127,9,Unnerve
+128,9,Defiant
+129,9,Defeatist
+130,9,Cursed Body
+131,9,Healer
+132,9,Friend Guard
+133,9,Weak Armor
+134,9,Heavy Metal
+135,9,Light Metal
+136,9,Multiscale
+137,9,Toxic Boost
+138,9,Flare Boost
+139,9,Harvest
+140,9,Telepathy
+141,9,Moody
+142,9,Overcoat
+143,9,Poison Touch
+144,9,Regenerator
+145,9,Big Pecks
+146,9,Sand Rush
+147,9,Wonder Skin
+148,9,Analytic
+149,9,Illusion
+150,9,Imposter
+151,9,Infiltrator
+152,9,Mummy
+153,9,Moxie
+154,9,Justified
+155,9,Rattled
+156,9,Magic Bounce
+157,9,Sap Sipper
+158,9,Prankster
+159,9,Sand Force
+160,9,Iron Barbs
+161,9,Zen Mode
+162,9,Victory Star
+163,9,Turboblaze
+164,9,Teravolt
+165,9,Aroma Veil
+166,9,Flower Veil
+167,9,Cheek Pouch
+168,9,Protean
+169,9,Fur Coat
+170,9,Magician
+171,9,Bulletproof
+172,9,Competitive
+173,9,Strong Jaw
+174,9,Refrigerate
+175,9,Sweet Veil
+176,9,Stance Change
+177,9,Gale Wings
+178,9,Mega Launcher
+179,9,Grass Pelt
+180,9,Symbiosis
+181,9,Tough Claws
+182,9,Pixilate
+183,9,Gooey
+184,9,Aerilate
+185,9,Parental Bond
+186,9,Dark Aura
+187,9,Fairy Aura
+188,9,Aura Break
+189,9,Primordial Sea
+190,9,Desolate Land
+191,9,Delta Stream
+192,9,Stamina
+193,9,Wimp Out
+194,9,Emergency Exit
+195,9,Water Compaction
+196,9,Merciless
+197,9,Shields Down
+198,9,Stakeout
+199,9,Water Bubble
+200,9,Steelworker
+201,9,Berserk
+202,9,Slush Rush
+203,9,Long Reach
+204,9,Liquid Voice
+205,9,Triage
+206,9,Galvanize
+207,9,Surge Surfer
+208,9,Schooling
+209,9,Disguise
+210,9,Battle Bond
+211,9,Power Construct
+212,9,Corrosion
+213,9,Comatose
+214,9,Queenly Majesty
+215,9,Innards Out
+216,9,Dancer
+217,9,Battery
+218,9,Fluffy
+219,9,Dazzling
+220,9,Soul-Heart
+221,9,Tangling Hair
+222,9,Receiver
+223,9,Power of Alchemy
+224,9,Beast Boost
+225,9,RKS System
+226,9,Electric Surge
+227,9,Psychic Surge
+228,9,Misty Surge
+229,9,Grassy Surge
+230,9,Full Metal Body
+231,9,Shadow Shield
+232,9,Prism Armor
+233,9,Neuroforce
+10001,9,Mountaineer
+10002,9,Wave Rider
+10003,9,Skater
+10004,9,Thrust
+10005,9,Perception
+10006,9,Parry
+10007,9,Instinct
+10008,9,Dodge
+10009,9,Jagged Edge
+10010,9,Frostbite
+10011,9,Tenacity
+10012,9,Pride
+10013,9,Deep Sleep
+10014,9,Power Nap
+10015,9,Spirit
+10016,9,Warm Blanket
+10017,9,Gulp
+10018,9,Herbivore
+10019,9,Sandpit
+10020,9,Hot Blooded
+10021,9,Medic
+10022,9,Life Force
+10023,9,Lunchbox
+10024,9,Nurse
+10025,9,Melee
+10026,9,Sponge
+10027,9,Bodyguard
+10028,9,Hero
+10029,9,Last Bastion
+10030,9,Stealth
+10031,9,Vanguard
+10032,9,Nomad
+10033,9,Sequence
+10034,9,Grass Cloak
+10035,9,Celebrate
+10036,9,Lullaby
+10037,9,Calming
+10038,9,Daze
+10039,9,Frighten
+10040,9,Interference
+10041,9,Mood Maker
+10042,9,Confidence
+10043,9,Fortune
+10044,9,Bonanza
+10045,9,Explode
+10046,9,Omnipotent
+10047,9,Share
+10048,9,Black Hole
+10049,9,Shadow Dash
+10050,9,Sprint
+10051,9,Disgust
+10052,9,High-rise
+10053,9,Climber
+10054,9,Flame Boost
+10055,9,Aqua Boost
+10056,9,Run Up
+10057,9,Conqueror
+10058,9,Shackle
+10059,9,Decoy
+10060,9,Shield

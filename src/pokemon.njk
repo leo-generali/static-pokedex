@@ -45,19 +45,11 @@ permalink: pokemon/{{ pokemon.name }}/index.html
           <hr class='mt-2 mb-4' />
           <ul>
             {% for ability in pokemon.abilities %}
-              <li class='mb-4 last:mb-0 md:flex items-center'>
-                <div class='w-3/4'>
-                  <span class='mb-2 block'><strong>{{ ability.name }}</strong>: {{ ability.prose }}</span>
-                  {% for effect in ability.longEffect %}
-                    <p class='mb-2 last:mb-0'>{{ effect | safe }}</p>
-                  {% endfor %}
-                </div>
-                {% set commonAbilityClasses = 'block font-bold flex-1 md:text-right mt-2 md:mt-0' %}
-                {% if ability.hidden %}
-                  <span class='{{ commonAbilityClasses }} text-red-500'>Hidden</span>
-                {% else %}
-                  <span class='{{ commonAbilityClasses }} text-blue-500'>Not Hidden</span>
-                {% endif %}
+              <li class='mb-4 last:mb-0'>
+                <span class='mb-2 block'><strong>{{ ability.name }}</strong>: {{ ability.prose }}</span>
+                {% for effect in ability.effect %}
+                  <p class='mb-2 last:mb-0'>{{ effect | safe }}</p>
+                {% endfor %}
               </li>
             {% endfor %}
           </ul>
