@@ -24,9 +24,11 @@ const getCacheKey = () => {
 };
 
 const fetchPokemon = () => {
+  const numberToFetch = process.env.ELEVENTY_ENV === 'development' ? 10 : 151;
+
   const promises = [];
 
-  for (let i = 1; i <= 151; i++) {
+  for (let i = 1; i <= numberToFetch; i++) {
     const url = `https://pokeapi.co/api/v2/pokemon/${i}`;
     promises.push(fetch(url).then((res) => res.json()));
   }
@@ -67,12 +69,12 @@ module.exports = async function() {
   const key = getCacheKey();
   const cachedPokemonData = cache.getKey(key);
 
-  // if (!cachedPokemonData) {
-  const pokemon = await fetchPokemon();
-  cache.setKey(key, pokemon);
-  cache.save();
-  return pokemon;
-  // }
+  if (!cachedPokemonData || process.env.ELEVENTY_ENV === 'development') {
+    const pokemon = await fetchPokemon();
+    cache.setKey(key, pokemon);
+    cache.save();
+    return pokemon;
+  }
 
   return cachedPokemonData;
 };

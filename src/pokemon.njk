@@ -99,7 +99,7 @@ permalink: pokemon/{{ pokemon.name }}/index.html
             <ul class='text-xs font-bold tracking-wide'>
               {% for weakness in pokemon.typeDefense.weaknesses %}
                 <li class='mb-1 last:mb-0'>
-                  <span class='w-2/3 text-white p-1 inline-block rounded uppercase text-center text-shadow' style='background-color: {{ weakness.type | typeColor }}'>
+                  <span class='w-2/3 text-white p-1 inline-block rounded uppercase text-center text-stroke' style='background-color: {{ weakness.type | typeColor }}'>
                     {{ weakness.type }}
                   </span>
                   <p class='inline-block ml-2' style='color: {{ weakness.multiplier | multiplierColor }}'>{{ weakness.multiplier }}x</p>
@@ -109,7 +109,7 @@ permalink: pokemon/{{ pokemon.name }}/index.html
             <ul class='text-xs font-bold tracking-wide'>
               {% for resistance in pokemon.typeDefense.resistances %}
                 <li class='mb-1 last:mb-0'>
-                  <span class='w-2/3 text-white p-1 inline-block rounded uppercase text-center text-shadow' style='background-color: {{ resistance.type | typeColor }}'>
+                  <span class='w-2/3 text-white p-1 inline-block rounded uppercase text-center text-stroke' style='background-color: {{ resistance.type | typeColor }}'>
                     {{ resistance.type }}
                   </span>
                   <p class='inline-block ml-2' style='color: {{ resistance.multiplier | multiplierColor }}'>{{ resistance.multiplier }}x</p>
