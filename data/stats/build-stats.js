@@ -55,5 +55,5 @@ const createData = (rawData, rawDataLocale) => {
 
 Promise.all([dataPromise, dataLocalePromise]).then(() => {
   const pokemon = JSON.stringify(createData(data, dataLocale), null, 2);
-  fs.writeFileSync('data/_stats.json', pokemon);
+  fs.writeFileSync('data/stats.json', pokemon);
 });

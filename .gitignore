@@ -93,3 +93,4 @@ styles/main-production.css
 _site/
 _datacache/
 node_modules/
+data/*.json
