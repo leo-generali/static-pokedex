@@ -40,7 +40,7 @@ const formatEffect = (string) => {
 };
 
 const createData = (rawData) => {
-  const result = [];
+  const result = {};
 
   rawData.abilities.forEach((ability) => {
     const { id } = ability;
@@ -60,13 +60,12 @@ const createData = (rawData) => {
     const shortEffect = shortEffectRaw ? formatEffect(shortEffectRaw) : '';
     const effectArray = effect ? effect.split('\n\n') : [];
 
-    result.push({
-      id,
+    result[id] = {
       name,
       flavorText,
       shortEffect,
       effect: effectArray
-    });
+    }
   });
 
   return result;

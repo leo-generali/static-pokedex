@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 const service = require('./service');
+const dataService = require('../data-service');
 
 const data = {
   moves: []
@@ -82,7 +83,7 @@ const createData = (rawData, rawDataLocale) => {
       power,
       pp,
       accuracy,
-      flavorText,
+      flavorText: dataService.getLastItem(flavorText),
       effect
     };
   });
@@ -91,6 +92,6 @@ const createData = (rawData, rawDataLocale) => {
 };
 
 Promise.all([dataPromise, dataLocalePromise]).then(() => {
-  const pokemon = JSON.stringify(createData(data, dataLocale), null, 2);
+  const pokemon = JSON.stringify(createData(data, dataLocale));
   fs.writeFileSync('data/moves.json', pokemon);
 });

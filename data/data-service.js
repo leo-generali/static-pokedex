@@ -10,4 +10,8 @@ const stripText = (str) =>
     .replace(/\{.*?\}/g, '')
     .replace(/\}/g, '');
 
-module.exports = { stripText };
+const getLastItem = (array) => {
+  return array[array.length - 1];
+};
+
+module.exports = { stripText, getLastItem };

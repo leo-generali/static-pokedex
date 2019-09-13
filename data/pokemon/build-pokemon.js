@@ -2,13 +2,15 @@ const csv = require('csv-parser');
 const path = require('path');
 const fs = require('fs');
 
-const statMap = JSON.parse(
-  fs.readFileSync(path.join(__dirname, '..', 'stats.json'))
-);
+const service = require('./service');
+const dataService = require('../data-service');
 
 const data = {
   pokemon: [],
-  stats: []
+  stats: [],
+  moves: [],
+  types: [],
+  abilities: []
 };
 
 const dataLocale = {
@@ -16,7 +18,7 @@ const dataLocale = {
   flavor_text: []
 };
 
-const tables = ['pokemon', 'stats'];
+const tables = ['pokemon', 'stats', 'moves', 'types', 'abilities'];
 const tablesLocale = ['names', 'flavor_text'];
 
 const dataPromise = new Promise((resolve, reject) => {
@@ -65,7 +67,7 @@ const createData = (rawData, rawDataLocale) => {
       })
       .map((statsData) => {
         return {
-          name: statMap[statsData.stat_id],
+          name: service.statMap[statsData.stat_id],
           baseStat: statsData.base_stat,
           percent: Math.round((statsData.base_stat / 255) * 100)
         };
@@ -79,26 +81,41 @@ const createData = (rawData, rawDataLocale) => {
 
     // Get flavor text
     const flavorTextArray = rawDataLocale.flavor_text
-      .filter((flavorTextData) => {
-        return flavorTextData.species_id == speciesId;
-      })
-      .map((flavorTextData) => {
-        return {
-          flavorText: flavorTextData.flavor_text,
-          versionId: flavorTextData.version_id
-        };
-      });
+      .filter((flavorTextData) => flavorTextData.species_id == speciesId)
+      .map((flavorTextData) => flavorTextData.flavor_text);
+
+    // Moves
+    const moves = rawData.moves
+      .filter((moveData) => moveData.pokemon_id == speciesId)
+      .map((moveData) => {
+        const { level } = moveData;
+
+        return { ...service.moveMap[moveData.move_id], level };
+      }).sort((a, b) => a.level - b.level);
+
+    // Types
+    const types = rawData.types
+      .filter(typeData => typeData.pokemon_id == speciesId)
+      .map(typeData => service.typeMap[typeData.type_id]);
+
+    // Abilities
+    const abilities = rawData.abilities
+      .filter(abilityData => abilityData.pokemon_id == speciesId)
+      .map(abilityData => service.abilitiesMap[abilityData.ability_id])
 
     result.push({
       name,
       genus,
+      types,
       id,
       speciesId,
       height,
       weight,
       baseExperience,
-      flavorTextArray,
-      stats
+      flavorText: dataService.getLastItem(flavorTextArray),
+      stats,
+      abilities,
+      moves
     });
   });
 
@@ -107,5 +124,5 @@ const createData = (rawData, rawDataLocale) => {
 
 Promise.all([dataPromise, dataLocalePromise]).then(() => {
   const pokemon = JSON.stringify(createData(data, dataLocale), null, 2);
-  fs.writeFileSync('data/_pokemon.json', pokemon);
+  fs.writeFileSync('src/_data/pokemon.json', pokemon);
 });
