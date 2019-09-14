@@ -20,7 +20,7 @@ scripts:
             {% endfor %}
           </ul>
         </div>
-        <img class='inline-block relative z-10' src='{{ pokemon.data.pokemon.image.indexPage }}' alt='{{ pokemon.data.pokemon.name }}' />
+        <img class='inline-block relative z-10' src='/assets/images/pokemon/{{ pokemon.data.pokemon.id }}.png' alt='{{ pokemon.data.pokemon.name }}' />
         {% svg 'pokeball' | safe %}
       </a>
     {% endfor %}

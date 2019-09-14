@@ -7478,6 +7478,26 @@
         "effect": "Requires a turn to charge before attacking.",
         "level": "48"
       }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Bulbasaur",
+        "currentPokemon": true,
+        "id": "1",
+        "level": 0
+      },
+      {
+        "name": "Ivysaur",
+        "currentPokemon": false,
+        "id": "2",
+        "level": "16"
+      },
+      {
+        "name": "Venusaur",
+        "currentPokemon": false,
+        "id": "3",
+        "level": "32"
+      }
     ]
   },
   {
@@ -13894,6 +13914,26 @@
         "flavorText": "In this two-turn attack, the user gathers light, then blasts a bundled beam on the next turn.",
         "effect": "Requires a turn to charge before attacking.",
         "level": "56"
+      }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Bulbasaur",
+        "currentPokemon": false,
+        "id": "1",
+        "level": 0
+      },
+      {
+        "name": "Ivysaur",
+        "currentPokemon": true,
+        "id": "2",
+        "level": "16"
+      },
+      {
+        "name": "Venusaur",
+        "currentPokemon": false,
+        "id": "3",
+        "level": "32"
       }
     ]
   },
@@ -21320,6 +21360,26 @@
         "flavorText": "In this two-turn attack, the user gathers light, then blasts a bundled beam on the next turn.",
         "effect": "Requires a turn to charge before attacking.",
         "level": "65"
+      }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Bulbasaur",
+        "currentPokemon": false,
+        "id": "1",
+        "level": 0
+      },
+      {
+        "name": "Ivysaur",
+        "currentPokemon": false,
+        "id": "2",
+        "level": "16"
+      },
+      {
+        "name": "Venusaur",
+        "currentPokemon": true,
+        "id": "3",
+        "level": "32"
       }
     ]
   },
@@ -29444,6 +29504,26 @@
         "effect": "Prevents the target from fleeing and inflicts damage for 2-5 turns.",
         "level": "49"
       }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Charmander",
+        "currentPokemon": true,
+        "id": "4",
+        "level": 0
+      },
+      {
+        "name": "Charmeleon",
+        "currentPokemon": false,
+        "id": "5",
+        "level": "16"
+      },
+      {
+        "name": "Charizard",
+        "currentPokemon": false,
+        "id": "6",
+        "level": "36"
+      }
     ]
   },
   {
@@ -36425,6 +36505,26 @@
         "flavorText": "The target becomes trapped within a fierce vortex of fire that rages for four to five turns.",
         "effect": "Prevents the target from fleeing and inflicts damage for 2-5 turns.",
         "level": "56"
+      }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Charmander",
+        "currentPokemon": false,
+        "id": "4",
+        "level": 0
+      },
+      {
+        "name": "Charmeleon",
+        "currentPokemon": true,
+        "id": "5",
+        "level": "16"
+      },
+      {
+        "name": "Charizard",
+        "currentPokemon": false,
+        "id": "6",
+        "level": "36"
       }
     ]
   },
@@ -45605,6 +45705,26 @@
         "effect": "User takes 1/3 the damage inflicted in recoil.  Has a 10% chance to burn the target.",
         "level": "77"
       }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Charmander",
+        "currentPokemon": false,
+        "id": "4",
+        "level": 0
+      },
+      {
+        "name": "Charmeleon",
+        "currentPokemon": false,
+        "id": "5",
+        "level": "16"
+      },
+      {
+        "name": "Charizard",
+        "currentPokemon": true,
+        "id": "6",
+        "level": "36"
+      }
     ]
   },
   {
@@ -53823,6 +53943,26 @@
         "effect": "Inflicts regular damage with no additional effect.",
         "level": "47"
       }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Squirtle",
+        "currentPokemon": true,
+        "id": "7",
+        "level": 0
+      },
+      {
+        "name": "Wartortle",
+        "currentPokemon": false,
+        "id": "8",
+        "level": "16"
+      },
+      {
+        "name": "Blastoise",
+        "currentPokemon": false,
+        "id": "9",
+        "level": "36"
+      }
     ]
   },
   {
@@ -60968,6 +61108,26 @@
         "flavorText": "The target is blasted by a huge volume of water launched under great pressure.",
         "effect": "Inflicts regular damage with no additional effect.",
         "level": "53"
+      }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Squirtle",
+        "currentPokemon": false,
+        "id": "7",
+        "level": 0
+      },
+      {
+        "name": "Wartortle",
+        "currentPokemon": true,
+        "id": "8",
+        "level": "16"
+      },
+      {
+        "name": "Blastoise",
+        "currentPokemon": false,
+        "id": "9",
+        "level": "36"
       }
     ]
   },
@@ -69504,6 +69664,26 @@
         "effect": "Inflicts regular damage with no additional effect.",
         "level": "68"
       }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Squirtle",
+        "currentPokemon": false,
+        "id": "7",
+        "level": 0
+      },
+      {
+        "name": "Wartortle",
+        "currentPokemon": false,
+        "id": "8",
+        "level": "16"
+      },
+      {
+        "name": "Blastoise",
+        "currentPokemon": true,
+        "id": "9",
+        "level": "36"
+      }
     ]
   },
   {
@@ -70043,6 +70223,26 @@
         "effect": "If target has a berry, inflicts double damage and uses the berry.",
         "level": "15"
       }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Caterpie",
+        "currentPokemon": true,
+        "id": "10",
+        "level": 0
+      },
+      {
+        "name": "Metapod",
+        "currentPokemon": false,
+        "id": "11",
+        "level": "7"
+      },
+      {
+        "name": "Butterfree",
+        "currentPokemon": false,
+        "id": "12",
+        "level": "10"
+      }
     ]
   },
   {
@@ -70495,6 +70695,26 @@
         "flavorText": "The user stiffens all the muscles in its body to raise its Defense stat.",
         "effect": "Raises the user's Defense by one stage.",
         "level": "7"
+      }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Caterpie",
+        "currentPokemon": false,
+        "id": "10",
+        "level": 0
+      },
+      {
+        "name": "Metapod",
+        "currentPokemon": true,
+        "id": "11",
+        "level": "7"
+      },
+      {
+        "name": "Butterfree",
+        "currentPokemon": false,
+        "id": "12",
+        "level": "10"
       }
     ]
   },
@@ -77228,6 +77448,26 @@
         "effect": "Has a 10% chance to raise all of the user's stats by one stage.",
         "level": "47"
       }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Caterpie",
+        "currentPokemon": false,
+        "id": "10",
+        "level": 0
+      },
+      {
+        "name": "Metapod",
+        "currentPokemon": false,
+        "id": "11",
+        "level": "7"
+      },
+      {
+        "name": "Butterfree",
+        "currentPokemon": true,
+        "id": "12",
+        "level": "10"
+      }
     ]
   },
   {
@@ -77732,6 +77972,26 @@
         "effect": "If target has a berry, inflicts double damage and uses the berry.",
         "level": "15"
       }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Weedle",
+        "currentPokemon": true,
+        "id": "13",
+        "level": 0
+      },
+      {
+        "name": "Kakuna",
+        "currentPokemon": false,
+        "id": "14",
+        "level": "7"
+      },
+      {
+        "name": "Beedrill",
+        "currentPokemon": false,
+        "id": "15",
+        "level": "10"
+      }
     ]
   },
   {
@@ -78176,6 +78436,26 @@
         "flavorText": "The user stiffens all the muscles in its body to raise its Defense stat.",
         "effect": "Raises the user's Defense by one stage.",
         "level": "7"
+      }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Weedle",
+        "currentPokemon": false,
+        "id": "13",
+        "level": 0
+      },
+      {
+        "name": "Kakuna",
+        "currentPokemon": true,
+        "id": "14",
+        "level": "7"
+      },
+      {
+        "name": "Beedrill",
+        "currentPokemon": false,
+        "id": "15",
+        "level": "10"
       }
     ]
   },
@@ -84513,6 +84793,26 @@
         "effect": "Lowers the target's HP to equal the user's.",
         "level": "45"
       }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Weedle",
+        "currentPokemon": false,
+        "id": "13",
+        "level": 0
+      },
+      {
+        "name": "Kakuna",
+        "currentPokemon": false,
+        "id": "14",
+        "level": "7"
+      },
+      {
+        "name": "Beedrill",
+        "currentPokemon": true,
+        "id": "15",
+        "level": "10"
+      }
     ]
   },
   {
@@ -90608,6 +90908,26 @@
         "effect": "Has a 30% chance to confuse the target.",
         "level": "53"
       }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Pidgey",
+        "currentPokemon": true,
+        "id": "16",
+        "level": 0
+      },
+      {
+        "name": "Pidgeotto",
+        "currentPokemon": false,
+        "id": "17",
+        "level": "18"
+      },
+      {
+        "name": "Pidgeot",
+        "currentPokemon": false,
+        "id": "18",
+        "level": "36"
+      }
     ]
   },
   {
@@ -96167,6 +96487,26 @@
         "accuracy": "70",
         "effect": "Has a 30% chance to confuse the target.",
         "level": "62"
+      }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Pidgey",
+        "currentPokemon": false,
+        "id": "16",
+        "level": 0
+      },
+      {
+        "name": "Pidgeotto",
+        "currentPokemon": true,
+        "id": "17",
+        "level": "18"
+      },
+      {
+        "name": "Pidgeot",
+        "currentPokemon": false,
+        "id": "18",
+        "level": "36"
       }
     ]
   },
@@ -102173,6 +102513,26 @@
         "accuracy": "70",
         "effect": "Has a 30% chance to confuse the target.",
         "level": "68"
+      }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Pidgey",
+        "currentPokemon": false,
+        "id": "16",
+        "level": 0
+      },
+      {
+        "name": "Pidgeotto",
+        "currentPokemon": false,
+        "id": "17",
+        "level": "18"
+      },
+      {
+        "name": "Pidgeot",
+        "currentPokemon": true,
+        "id": "18",
+        "level": "36"
       }
     ]
   },
@@ -109825,6 +110185,20 @@
         "effect": "Lowers the target's HP to equal the user's.",
         "level": "41"
       }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Rattata",
+        "currentPokemon": true,
+        "id": "19",
+        "level": 0
+      },
+      {
+        "name": "Raticate",
+        "currentPokemon": false,
+        "id": "20",
+        "level": "20"
+      }
     ]
   },
   {
@@ -117391,6 +117765,20 @@
         "accuracy": "100",
         "effect": "Lowers the target's HP to equal the user's.",
         "level": "50"
+      }
+    ],
+    "evolutionChain": [
+      {
+        "name": "Rattata",
+        "currentPokemon": false,
+        "id": "19",
+        "level": 0
+      },
+      {
+        "name": "Raticate",
+        "currentPokemon": true,
+        "id": "20",
+        "level": "20"
       }
     ]
   }

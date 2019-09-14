@@ -10,7 +10,9 @@ const data = {
   stats: [],
   moves: [],
   types: [],
-  abilities: []
+  abilities: [],
+  species: [],
+  evolution: []
 };
 
 const dataLocale = {
@@ -18,7 +20,15 @@ const dataLocale = {
   flavor_text: []
 };
 
-const tables = ['pokemon', 'stats', 'moves', 'types', 'abilities'];
+const tables = [
+  'pokemon',
+  'stats',
+  'moves',
+  'types',
+  'abilities',
+  'species',
+  'evolution'
+];
 const tablesLocale = ['names', 'flavor_text'];
 
 const dataPromise = new Promise((resolve, reject) => {
@@ -91,17 +101,47 @@ const createData = (rawData, rawDataLocale) => {
         const { level } = moveData;
 
         return { ...service.moveMap[moveData.move_id], level };
-      }).sort((a, b) => a.level - b.level);
+      })
+      .sort((a, b) => a.level - b.level);
 
     // Types
     const types = rawData.types
-      .filter(typeData => typeData.pokemon_id == speciesId)
-      .map(typeData => service.typeMap[typeData.type_id]);
+      .filter((typeData) => typeData.pokemon_id == speciesId)
+      .map((typeData) => service.typeMap[typeData.type_id]);
 
     // Abilities
     const abilities = rawData.abilities
-      .filter(abilityData => abilityData.pokemon_id == speciesId)
-      .map(abilityData => service.abilitiesMap[abilityData.ability_id])
+      .filter((abilityData) => abilityData.pokemon_id == speciesId)
+      .map((abilityData) => service.abilitiesMap[abilityData.ability_id]);
+
+    // Evolution Chain
+    const { evolution_chain_id: evolutionChainId } = rawData.species.find(
+      (speciesData) => speciesData.id == speciesId
+    );
+
+    const evolution = rawData.species
+      .filter(
+        (speciesData) => speciesData.evolution_chain_id == evolutionChainId
+      )
+      .map((speciesData) => {
+        const { name } = rawDataLocale.names.find(
+          (pokemonNameData) =>
+            pokemonNameData.pokemon_species_id == speciesData.id
+        );
+
+        const evolution =
+          rawData.evolution.find(
+            (evolutionData) =>
+              evolutionData.evolved_species_id == speciesData.id
+          ) || {};
+
+        return {
+          name,
+          currentPokemon: speciesData.id == id,
+          id: speciesData.id,
+          level: evolution.minimum_level || 0
+        };
+      });
 
     result.push({
       name,
@@ -115,7 +155,8 @@ const createData = (rawData, rawDataLocale) => {
       flavorText: dataService.getLastItem(flavorTextArray),
       stats,
       abilities,
-      moves
+      moves,
+      evolution
     });
   });
 
