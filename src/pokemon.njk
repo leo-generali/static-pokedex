@@ -117,13 +117,13 @@ permalink: pokemon/{{ pokemon.name | lower }}/index.html
         <hr class='mt-2 mb-4' />
         <div class='flex justify-between'>
           {% for evolution in pokemon.evolutionChain %}
-            <div class='text-center'>
+            <a href='/pokemon/{{ evolution.name | lower }}' class='text-center text-indigo-500 transition p-2 rounded-lg hover:-translate-y-1 hover:shadow-md hover:text-indigo-700 {% if evolution.id == pokemon.id %} border-2 border-gray-300 {% endif %}'>
               <img src="/assets/images/pokemon/{{ evolution.id }}.png" alt="">
-              <span class='font-semibold'>{{ evolution.name }}</span>
+              <span class='font-semibold underline'>{{ evolution.name }}</span>
               {% if evolution.level !== 0 %}
                 <span>{{ evolution.level }}</span>
               {% endif %}
-            </div>
+            </a>
           {% endfor %}
         </div>
       </div>
