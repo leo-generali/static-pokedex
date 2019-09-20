@@ -1,0 +1,45 @@
+---
+tags: pokemon
+layout: layouts/base.njk
+pagination:
+  data: pokemon
+  size: 1
+  alias: pokemon
+  addAllPagesToCollections: false
+renderData:
+  title: '{{ pokemon.name }}'
+permalink: pokemon/{{ pokemon.identifier | lower }}/moves/index.html
+---
+
+{% from 'macros/pokemon/header.njk' import header %}
+{% from 'macros/pokemon/section-header.njk' import sectionHeader %}
+
+{% set href = "/pokemon/" + pokemon.identifier | lower %}
+
+<main class='flex-1 pb-4'>
+  {{ header(pokemon, href )}}
+  <section class='container mx-auto px-4'>
+    <div class='py-12 -mt-12 bg-white rounded-lg shadow-md px-8 sm:px-12'>
+      {% include 'partials/pokemon/nav.njk' %}
+      {{ sectionHeader('Moves:') }}
+      <ul class='w-full'>
+        {% for move in pokemon.moves %}
+          <li class='mb-2 last:mb-0'>
+            <div>
+              <span class='font-semibold'>{{ move.name }}</span>
+              {% if move.power %}
+                <span>- {{ move.power }} damage</span>
+              {% endif %}
+            </div>
+            {% if move.flavorText %}
+              <p>{{ move.flavorText }}</p>
+            {% else %}
+              <p>{{ move.effect }}</p>
+            {% endif %}
+            <p>{{ move.pp }}</p>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</main>

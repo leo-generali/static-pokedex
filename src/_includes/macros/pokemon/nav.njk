@@ -1,0 +1,7 @@
+{% macro nav(active) %}
+  {{ active }}
+  {% for navItem in pokemonNav %}
+    {{ navItem.text | log }}
+    {{ active }}
+  {% endfor %}
+{% endmacro %}
