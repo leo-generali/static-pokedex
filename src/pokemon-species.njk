@@ -1,0 +1,55 @@
+---
+tags: pokemon
+layout: layouts/base.njk
+pagination:
+  data: pokemon
+  size: 1
+  alias: pokemon
+  addAllPagesToCollections: false
+renderData:
+  title: '{{ pokemon.name }}'
+permalink: pokemon/{{ pokemon.identifier | lower }}/species/index.html
+---
+
+{% from 'macros/pokemon/header.njk' import header %}
+{% from 'macros/pokemon/section-header.njk' import sectionHeader %}
+
+{% set href = "/pokemon/" + pokemon.identifier | lower %}
+
+<main class='flex-1 pb-4'>
+  {{ header(pokemon, href )}}
+  <section class='container mx-auto px-4'>
+    <div class='py-12 -mt-12 bg-white rounded-lg shadow-md px-8 sm:px-12'>
+      {% include 'partials/pokemon/nav.njk' %}
+      {{ sectionHeader('Species:') }}
+      <ul>
+        <li class='flex justify-between'>
+          <span class='font-bold text-sm uppercase tracking-wide'>Height:</span>
+          <span class=''>{{ pokemon.height }} meters</span>
+        </li>
+        <li class='flex justify-between'>
+          <span class='font-bold text-sm uppercase tracking-wide'>Weight:</span>
+          <span class=''>{{ pokemon.weight }} kilograms</span>
+        </li>
+        {# <li class='flex justify-between'>
+          <span class='font-bold text-sm uppercase tracking-wide'>Steps to Hatch Eggs:</span>
+          <span class=''>{{ pokemon.hatchSteps | comma }}</span>
+        </li> #}
+        {# <li class='flex justify-between'>
+          <span class='font-bold text-sm uppercase tracking-wide'>Egg Groups:</span>
+          <span class=''>{{ pokemon.eggGroups }}</span>
+        </li> #}
+        {# <li class='flex justify-between'>
+          <span class='font-bold text-sm uppercase tracking-wide'>Gender Ratio:</span>
+          <div>
+          {% if pokemon.genderRatio.notAvailable %}
+            <span>Not Available</span>
+          {% else %}
+            <span class='text-blue-600'>{{ pokemon.genderRatio.male }}% ♂</span> / <span class='text-pink-600'>{{ pokemon.genderRatio.female }}% ♀</span>
+          {% endif %}
+          </div>
+        </li> #}
+      </ul>
+    </div>
+  </section>
+</main>

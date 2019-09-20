@@ -1,1 +1,5 @@
-[{ "text": "about", "href": "" }, { "text": "moves", "href": "moves/" }]
+[
+  { "text": "about", "href": "" },
+  { "text": "moves", "href": "moves/" },
+  { "text": "species", "href": "species/" }
+]
