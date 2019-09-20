@@ -4,6 +4,7 @@ const fs = require('fs');
 
 const service = require('./service');
 const dataService = require('../data-service');
+const evolutionService = require('./service/evolution-service');
 
 const data = {
   pokemon: [],
@@ -64,10 +65,12 @@ const createData = (rawData, rawDataLocale) => {
   rawData.pokemon.forEach((pokemon) => {
     const {
       id,
+      identifier,
       species_id: speciesId,
       height,
       weight,
-      base_experience: baseExperience
+      base_experience: baseExperience,
+      order
     } = pokemon;
 
     // Get stats info
@@ -83,7 +86,7 @@ const createData = (rawData, rawDataLocale) => {
         };
       });
 
-    // Get name and genus
+    // Get name, identifier, genus
     const { name, genus } =
       rawDataLocale.names.find(
         (pokemonNameData) => pokemonNameData.pokemon_species_id == speciesId
@@ -96,10 +99,12 @@ const createData = (rawData, rawDataLocale) => {
 
     // Moves
     const moves = rawData.moves
-      .filter((moveData) => moveData.pokemon_id == speciesId)
+      .filter(
+        (moveData) =>
+          moveData.pokemon_id == speciesId && moveData.version_group_id == '18'
+      )
       .map((moveData) => {
         const { level } = moveData;
-
         return { ...service.moveMap[moveData.move_id], level };
       })
       .sort((a, b) => a.level - b.level);
@@ -114,37 +119,11 @@ const createData = (rawData, rawDataLocale) => {
       .filter((abilityData) => abilityData.pokemon_id == speciesId)
       .map((abilityData) => service.abilitiesMap[abilityData.ability_id]);
 
-    // Evolution Chain
-    const { evolution_chain_id: evolutionChainId } = rawData.species.find(
-      (speciesData) => speciesData.id == speciesId
-    );
-
-    const evolution = rawData.species
-      .filter(
-        (speciesData) => speciesData.evolution_chain_id == evolutionChainId
-      )
-      .map((speciesData) => {
-        const { name } = rawDataLocale.names.find(
-          (pokemonNameData) =>
-            pokemonNameData.pokemon_species_id == speciesData.id
-        );
-
-        const evolution =
-          rawData.evolution.find(
-            (evolutionData) =>
-              evolutionData.evolved_species_id == speciesData.id
-          ) || {};
-
-        return {
-          name,
-          currentPokemon: speciesData.id == id,
-          id: speciesData.id,
-          level: evolution.minimum_level || 0
-        };
-      });
+    const evolution = evolutionService(rawData, rawDataLocale, speciesId);
 
     result.push({
       name,
+      identifier,
       genus,
       types,
       id,
