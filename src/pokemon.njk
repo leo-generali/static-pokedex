@@ -23,8 +23,9 @@ permalink: pokemon/{{ pokemon.identifier | lower }}/index.html
       </div>
       <ul class='text-xs font-bold uppercase tracking-wide'>
         {% for type in pokemon.types %}
-          <li class='p-2 mr-2 rounded text-white relative overflow-hidden inline-block w-32 text-center shadow-md'>
+          <li class='p-2 mr-2 rounded text-white relative overflow-hidden inline-block w-32 text-center shadow-md inline-flex justify-center align-bottom last:mr-0'>
             <div class='bg-white opacity-25 absolute left-0 top-0 h-full w-full'></div>
+            {% typeIcon type | safe, 'mr-2' %}
             {{ type }}
           </li>
         {% endfor %}

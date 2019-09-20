@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="14px" viewBox="0 0 13 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57 (83077) - https://sketch.com -->
+    <title>Oval</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Types/Grass" transform="translate(-13.000000, -14.000000)" fill="#FFFFFF">
+            <g id="Group" transform="translate(5.000000, 5.000000)">
+                <path d="M14.2725992,8 C18.9186225,11.6658327 21.2416341,14.6255603 21.2416341,16.8791829 C21.2416341,19.8815327 19.0799663,22.3789979 16.2281113,22.900098 L15.9196767,19.8735532 L17.6229795,17.2322592 L15.6724679,18.8282227 L15.6519626,16.5538856 L16.6537372,14.990099 L15.3389845,15.7040295 L14.5234846,12.8598464 L14.6990239,15.9210058 L13.3556357,15.6919379 L14.8499065,16.7939298 L14.9778615,18.931738 L13.0787248,17.9642892 L14.9848372,19.8704015 L15.312,22.996 L15.1208171,23 C11.8155039,23 9.12211088,20.3800584 9.00403678,17.1035739 L9,16.8791829 C9,14.6255603 10.7575331,11.6658327 14.2725992,8 Z" id="Oval" transform="translate(15.120817, 15.500000) rotate(45.000000) translate(-15.120817, -15.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

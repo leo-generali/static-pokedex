@@ -19,6 +19,7 @@ module.exports = (config) => {
 
   // Shortcodes
   config.addShortcode('svg', require('./app/shortcodes/svg'));
+  config.addShortcode('typeIcon', require('./app/shortcodes/typeIcon'));
 
   // Passthrough
   config.addPassthroughCopy('src/assets/images/');
