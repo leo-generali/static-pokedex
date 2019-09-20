@@ -4,6 +4,7 @@ const fs = require('fs');
 
 const service = require('./service');
 const dataService = require('../data-service');
+const { typeMap } = require('../pokemon/service');
 
 const data = {
   moves: []
@@ -54,7 +55,8 @@ const createData = (rawData, rawDataLocale) => {
       pp,
       accuracy,
       effect_id: effectId,
-      effect_chance: effectChance
+      effect_chance: effectChance,
+      type_id: typeId
     } = move;
 
     // Move name
@@ -84,7 +86,8 @@ const createData = (rawData, rawDataLocale) => {
       pp,
       accuracy,
       flavorText: dataService.getLastItem(flavorText),
-      effect
+      effect,
+      type: typeMap[typeId]
     };
   });
 

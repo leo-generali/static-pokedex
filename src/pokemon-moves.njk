@@ -5,10 +5,10 @@ pagination:
   data: pokemon
   size: 1
   alias: pokemon
-  addAllPagesToCollections: false
 renderData:
   title: '{{ pokemon.name }}'
 permalink: pokemon/{{ pokemon.identifier | lower }}/moves/index.html
+eleventyExcludeFromCollections: true
 ---
 
 {% from 'macros/pokemon/header.njk' import header %}
@@ -23,20 +23,39 @@ permalink: pokemon/{{ pokemon.identifier | lower }}/moves/index.html
       {% include 'partials/pokemon/nav.njk' %}
       {{ sectionHeader('Moves:') }}
       <ul class='w-full'>
-        {% for move in pokemon.moves %}
-          <li class='mb-2 last:mb-0'>
-            <div>
-              <span class='font-semibold'>{{ move.name }}</span>
-              {% if move.power %}
-                <span>- {{ move.power }} damage</span>
+        {# Moves by Level Up #}
+        {% for move in pokemon.moves['1'] %}
+          <li class='grid grid-columns-6 mb-6 last:mb-0'>
+            <div class='col-span-5'>
+              <span class='font-semibold text-lg block'>{{ move.name }}</span>
+              <span class='font-light text-gray-600 block'>Level {{ move.level }}</span>
+            </div>
+            <div class='col-span-1 flex flex-col items-center'>
+              <div class='h-8 w-8 p-2 inline-block rounded-full' style='background-color: {{ move.type | typeColor }}'>
+                {% typeIcon move.type | safe, 'w-full h-full' %}
+              </div>
+              <span class='text-gray-900 font-light text-xs'>{{ move.type | title }}</span>
+            </div>
+            <div class='col-span-6'>
+              {% if move.flavorText %}
+                <p>{{ move.flavorText }}</p>
+              {% else %}
+                <p>{{ move.effect }}</p>
               {% endif %}
             </div>
-            {% if move.flavorText %}
-              <p>{{ move.flavorText }}</p>
-            {% else %}
-              <p>{{ move.effect }}</p>
-            {% endif %}
-            <p>{{ move.pp }}</p>
+            <div class='col-span-6'>
+              <ul class=''>
+                <li><span class='font-bold'>PP:</span> {{ move.pp }}</li>
+                {% if move.power %}
+                  <li>
+                    <span class='font-bold'>Power:</span> {{ move.power }}
+                    {% if move.type in pokemon.types %}
+                      <span class='font-light'>({{ move.power * 1.5 }} w/STAB)</span>
+                    {% endif %}
+                  </li>
+                {% endif %}
+              </ul>
+            </div>
           </li>
         {% endfor %}
       </ul>

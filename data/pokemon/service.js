@@ -17,9 +17,14 @@ const abilitiesMap = JSON.parse(
   fs.readFileSync(path.join(__dirname, '..', 'abilities.json'))
 );
 
+const moveMethodMap = JSON.parse(
+  fs.readFileSync(path.join(__dirname, '..', 'move-methods.json'))
+);
+
 module.exports = {
   statMap,
   moveMap,
   typeMap,
-  abilitiesMap
+  abilitiesMap,
+  moveMethodMap
 };

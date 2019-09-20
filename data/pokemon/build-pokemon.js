@@ -1,6 +1,7 @@
 const csv = require('csv-parser');
 const path = require('path');
 const fs = require('fs');
+const _ = require('underscore');
 
 const service = require('./service');
 const dataService = require('../data-service');
@@ -98,16 +99,39 @@ const createData = (rawData, rawDataLocale) => {
       .map((flavorTextData) => flavorTextData.flavor_text);
 
     // Moves
-    const moves = rawData.moves
+    const moves = _.chain(rawData.moves)
       .filter(
         (moveData) =>
           moveData.pokemon_id == speciesId && moveData.version_group_id == '18'
       )
-      .map((moveData) => {
-        const { level } = moveData;
-        return { ...service.moveMap[moveData.move_id], level };
+      .groupBy('pokemon_move_method_id')
+      .mapObject((moveMethodArr, key) => {
+        if (key == 1) {
+          return moveMethodArr
+            .sort((a, b) => a.level - b.level)
+            .map((moveData) => {
+              const { level } = moveData;
+              return { ...service.moveMap[moveData.move_id], level };
+            });
+        }
+        return moveMethodArr;
       })
-      .sort((a, b) => a.level - b.level);
+      .value();
+
+    // const moves = _.groupBy(allMoves, 'pokemon_move_method_id').map(
+    //   (moveMethodArray) => {
+    //     console.log(moveMethodArray);
+    //   }
+    // );
+    // .filter(
+    //   (moveData) =>
+    //     moveData.pokemon_id == speciesId && moveData.version_group_id == '18'
+    // )
+    // .map((moveData) => {
+    //   const { level } = moveData;
+    //   return { ...service.moveMap[moveData.move_id], level };
+    // })
+    // .sort((a, b) => a.level - b.level);
 
     // Types
     const types = rawData.types

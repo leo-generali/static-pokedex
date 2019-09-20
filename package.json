@@ -12,7 +12,8 @@
     "build": "yarn assets:prod && ELEVENTY_ENV=production eleventy",
     "test": "jest",
     "test:watch": "jest --watch",
-    "getData": "node data/functions/getPokemonData.js"
+    "build:pokemon": "node data/pokemon/build-pokemon.js",
+    "build:moves": "node data/moves/build-moves.js"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
@@ -33,6 +34,7 @@
     "tailwindcss": "^1.1.2",
     "tailwindcss-grid": "^1.2.1",
     "tailwindcss-transforms": "^2.2.0",
+    "underscore": "^1.9.1",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
   }

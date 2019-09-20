@@ -5,10 +5,10 @@ pagination:
   data: pokemon
   size: 1
   alias: pokemon
-  addAllPagesToCollections: false
 renderData:
   title: '{{ pokemon.name }}'
 permalink: pokemon/{{ pokemon.identifier | lower }}/species/index.html
+eleventyExcludeFromCollections: true
 ---
 
 {% from 'macros/pokemon/header.njk' import header %}

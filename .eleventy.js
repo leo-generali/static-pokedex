@@ -2,7 +2,7 @@ module.exports = (config) => {
   // Transforms
   config.addTransform('htmlmin', require('./app/transforms/htmlmin'));
 
-  config.addCollection('pokemonSorted', function(collection) {
+  config.addCollection('pokemonSorted', (collection) => {
     return [...collection.getFilteredByTag('pokemon')].sort(
       (a, b) => a.data.pokemon.id - b.data.pokemon.id
     );
