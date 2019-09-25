@@ -113,8 +113,14 @@ const createData = (rawData, rawDataLocale) => {
               const { level } = moveData;
               return { ...service.moveMap[moveData.move_id], level };
             });
+        } else {
+          return moveMethodArr
+            .sort((a, b) => a.name - b.name)
+            .map((moveData) => {
+              const { level } = moveData;
+              return { ...service.moveMap[moveData.move_id], level };
+            });
         }
-        return moveMethodArr;
       })
       .value();
 

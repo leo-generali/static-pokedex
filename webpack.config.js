@@ -40,7 +40,8 @@ module.exports = (env) => {
 
     entry: {
       main: './src/assets/packs/main.js',
-      search: './src/assets/packs/search.js'
+      search: './src/assets/packs/search.js',
+      moves: './src/assets/packs/moves.js'
     },
 
     output: {

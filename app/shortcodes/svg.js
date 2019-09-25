@@ -1,7 +1,8 @@
 const path = require('path');
 const fs = require('fs');
+const cheerio = require('cheerio');
 
-module.exports = (svg, classes) => {
+module.exports = (svg, classNames) => {
   const icon = fs.readFileSync(
     path.join(
       __dirname,
@@ -16,5 +17,11 @@ module.exports = (svg, classes) => {
     'utf8'
   );
 
-  return icon;
+  const $ = cheerio.load(icon);
+
+  if (classNames) {
+    $('svg').addClass(classNames.val);
+  }
+
+  return $.html();
 };

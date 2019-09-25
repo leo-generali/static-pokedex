@@ -22,19 +22,19 @@ const dataLocalePromise = new Promise((resolve, reject) => {
 });
 
 const createData = (rawDataLocale) => {
-  const result = {};    
+  const result = {};
 
   rawDataLocale.move_method.forEach((moveMethod) => {
     result[moveMethod.pokemon_move_method_id] = {
       name: moveMethod.name,
       description: moveMethod.description
-    }
+    };
   });
 
   return result;
 };
 
 Promise.all([dataLocalePromise]).then(() => {
-  const moveMethods = JSON.stringify(createData(dataLocale), null, 2);
+  const moveMethods = JSON.stringify(createData(dataLocale));
   fs.writeFileSync('data/move-methods.json', moveMethods);
 });

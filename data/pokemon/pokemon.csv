@@ -8,14 +8,3 @@ id,identifier,species_id,height,weight,base_experience,order,is_default
 7,squirtle,7,5,90,63,10,1
 8,wartortle,8,10,225,142,11,1
 9,blastoise,9,16,855,239,12,1
-10,caterpie,10,3,29,39,14,1
-11,metapod,11,7,99,72,15,1
-12,butterfree,12,11,320,178,16,1
-13,weedle,13,3,32,39,17,1
-14,kakuna,14,6,100,72,18,1
-15,beedrill,15,10,295,178,19,1
-16,pidgey,16,3,18,50,21,1
-17,pidgeotto,17,11,300,122,22,1
-18,pidgeot,18,15,395,216,23,1
-19,rattata,19,3,35,51,25,1
-20,raticate,20,7,185,145,27,1

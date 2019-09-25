@@ -9,6 +9,8 @@ renderData:
   title: '{{ pokemon.name }}'
 permalink: pokemon/{{ pokemon.identifier | lower }}/moves/index.html
 eleventyExcludeFromCollections: true
+scripts:
+  - moves
 ---
 
 {% from 'macros/pokemon/header.njk' import header %}
@@ -22,43 +24,57 @@ eleventyExcludeFromCollections: true
     <div class='py-12 -mt-12 bg-white rounded-lg shadow-md px-8 sm:px-12'>
       {% include 'partials/pokemon/nav.njk' %}
       {{ sectionHeader('Moves:') }}
-      <ul class='w-full'>
-        {# Moves by Level Up #}
-        {% for move in pokemon.moves['1'] %}
-          <li class='grid grid-columns-6 mb-6 last:mb-0'>
-            <div class='col-span-5'>
-              <span class='font-semibold text-lg block'>{{ move.name }}</span>
-              <span class='font-light text-gray-600 block'>Level {{ move.level }}</span>
-            </div>
-            <div class='col-span-1 flex flex-col items-center'>
-              <div class='h-8 w-8 p-2 inline-block rounded-full' style='background-color: {{ move.type | typeColor }}'>
-                {% typeIcon move.type | safe, 'w-full h-full' %}
-              </div>
-              <span class='text-gray-900 font-light text-xs'>{{ move.type | title }}</span>
-            </div>
-            <div class='col-span-6'>
-              {% if move.flavorText %}
-                <p>{{ move.flavorText }}</p>
-              {% else %}
-                <p>{{ move.effect }}</p>
-              {% endif %}
-            </div>
-            <div class='col-span-6'>
-              <ul class=''>
-                <li><span class='font-bold'>PP:</span> {{ move.pp }}</li>
-                {% if move.power %}
-                  <li>
-                    <span class='font-bold'>Power:</span> {{ move.power }}
-                    {% if move.type in pokemon.types %}
-                      <span class='font-light'>({{ move.power * 1.5 }} w/STAB)</span>
+      {% for level in range(1, 10) %}
+        {% if pokemon.moves[level] %}
+          <div class='mb-4'>
+            <p class='font-semibold text-2xl'>{{ moveMethods[level].name }}:</p>
+            <p class='text-sm font-light'>({{ moveMethods[level].description }})</p>
+          </div>
+          <ul class='mb-4'>
+            {% for move in pokemon.moves[level] %}
+              <li class='app-move grid grid-columns-6 mb-2 last:mb-0'>
+                <div class='col-span-4'>
+                  <span class='font-semibold text-lg block'>{{ move.name }}</span>
+                  {% if level == 1 %}
+                    <span class='font-light text-gray-600 block'>Level {{ move.level }}</span>
+                  {% endif %}
+                </div>
+                <div class='col-span-1 flex flex-col items-center'>
+                  <div class='h-8 w-8 p-2 inline-block rounded-full' style='background-color: {{ move.type | typeColor }}'>
+                    {% typeIcon move.type | safe, 'w-full h-full' %}
+                  </div>
+                  <span class='text-gray-900 font-light text-xs'>{{ move.type | title }}</span>
+                </div>
+                <div class='col-span-1 flex flex-col items-center'>
+                  <button class='app-move-button-toggle h-8 w-8 inline-block p-2 rounded-full border'>
+                    {% svg 'arrow', 'app-move-button-arrow h-full w-full transition-fast m-auto fill-current' | safe %}
+                  </button>
+                </div>
+                <div class='app-move-description-text col-span-6 hidden mt-2'>
+                  {% if move.flavorText %}
+                    <p>{{ move.flavorText }}</p>
+                  {% else %}
+                    <p>{{ move.effect }}</p>
+                  {% endif %}
+                </div>
+                <div class='app-move-description-info col-span-6 hidden mb-4'>
+                  <ul class=''>
+                    <li><span class='font-bold'>PP:</span> {{ move.pp }}</li>
+                    {% if move.power %}
+                      <li>
+                        <span class='font-bold'>Power:</span> {{ move.power }}
+                        {% if move.type in pokemon.types %}
+                          <span class='font-light'>({{ move.power * 1.5 }} w/STAB)</span>
+                        {% endif %}
+                      </li>
                     {% endif %}
-                  </li>
-                {% endif %}
-              </ul>
-            </div>
-          </li>
-        {% endfor %}
-      </ul>
+                  </ul>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      {% endfor %}
     </div>
   </section>
 </main>

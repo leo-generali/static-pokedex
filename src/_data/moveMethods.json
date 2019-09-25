@@ -1,0 +1,42 @@
+{
+  "1": {
+    "name": "Level up",
+    "description": "Learned when a Pokémon reaches a certain level."
+  },
+  "2": {
+    "name": "Egg",
+    "description": "Appears on a newly-hatched Pokémon, if the father had the same move."
+  },
+  "3": {
+    "name": "Tutor",
+    "description": "Can be taught at any time by an NPC."
+  },
+  "4": {
+    "name": "Machine",
+    "description": "Can be taught at any time by using a TM or HM."
+  },
+  "5": {
+    "name": "Stadium: Surfing Pikachu",
+    "description": "Learned when a non-rental Pikachu helps beat Prime Cup Master Ball R-2.  It must participate in every battle, and you must win with no continues."
+  },
+  "6": {
+    "name": "Volt Tackle Pichu",
+    "description": "Appears on a Pichu whose mother was holding a Light Ball.  The father cannot be Ditto."
+  },
+  "7": {
+    "name": "Colosseum: Purification",
+    "description": "Appears on a Shadow Pokémon as it becomes increasingly purified."
+  },
+  "8": {
+    "name": "XD: Shadow",
+    "description": "Appears on a Snatched Shadow Pokémon."
+  },
+  "9": {
+    "name": "XD: Purification",
+    "description": "Appears on a Shadow Pokémon as it becomes increasingly purified."
+  },
+  "10": {
+    "name": "Form Change",
+    "description": "Appears when Rotom or Cosplay Pikachu changes form.  Disappears if the Pokémon becomes another form and this move can only be learned by form change."
+  }
+}

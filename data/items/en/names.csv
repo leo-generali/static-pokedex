@@ -1,0 +1,955 @@
+item_id,local_language_id,name
+1,9,Master Ball
+2,9,Ultra Ball
+3,9,Great Ball
+4,9,Poké Ball
+5,9,Safari Ball
+6,9,Net Ball
+7,9,Dive Ball
+8,9,Nest Ball
+9,9,Repeat Ball
+10,9,Timer Ball
+11,9,Luxury Ball
+12,9,Premier Ball
+13,9,Dusk Ball
+14,9,Heal Ball
+15,9,Quick Ball
+16,9,Cherish Ball
+17,9,Potion
+18,9,Antidote
+19,9,Burn Heal
+20,9,Ice Heal
+21,9,Awakening
+22,9,Paralyze Heal
+23,9,Full Restore
+24,9,Max Potion
+25,9,Hyper Potion
+26,9,Super Potion
+27,9,Full Heal
+28,9,Revive
+29,9,Max Revive
+30,9,Fresh Water
+31,9,Soda Pop
+32,9,Lemonade
+33,9,Moomoo Milk
+34,9,Energy Powder
+35,9,Energy Root
+36,9,Heal Powder
+37,9,Revival Herb
+38,9,Ether
+39,9,Max Ether
+40,9,Elixir
+41,9,Max Elixir
+42,9,Lava Cookie
+43,9,Berry Juice
+44,9,Sacred Ash
+45,9,HP Up
+46,9,Protein
+47,9,Iron
+48,9,Carbos
+49,9,Calcium
+50,9,Rare Candy
+51,9,PP Up
+52,9,Zinc
+53,9,PP Max
+54,9,Old Gateau
+55,9,Guard Spec.
+56,9,Dire Hit
+57,9,X Attack
+58,9,X Defense
+59,9,X Speed
+60,9,X Accuracy
+61,9,X Sp. Atk
+62,9,X Sp. Def
+63,9,Poké Doll
+64,9,Fluffy Tail
+65,9,Blue Flute
+66,9,Yellow Flute
+67,9,Red Flute
+68,9,Black Flute
+69,9,White Flute
+70,9,Shoal Salt
+71,9,Shoal Shell
+72,9,Red Shard
+73,9,Blue Shard
+74,9,Yellow Shard
+75,9,Green Shard
+76,9,Super Repel
+77,9,Max Repel
+78,9,Escape Rope
+79,9,Repel
+80,9,Sun Stone
+81,9,Moon Stone
+82,9,Fire Stone
+83,9,Thunder Stone
+84,9,Water Stone
+85,9,Leaf Stone
+86,9,Tiny Mushroom
+87,9,Big Mushroom
+88,9,Pearl
+89,9,Big Pearl
+90,9,Stardust
+91,9,Star Piece
+92,9,Nugget
+93,9,Heart Scale
+94,9,Honey
+95,9,Growth Mulch
+96,9,Damp Mulch
+97,9,Stable Mulch
+98,9,Gooey Mulch
+99,9,Root Fossil
+100,9,Claw Fossil
+101,9,Helix Fossil
+102,9,Dome Fossil
+103,9,Old Amber
+104,9,Armor Fossil
+105,9,Skull Fossil
+106,9,Rare Bone
+107,9,Shiny Stone
+108,9,Dusk Stone
+109,9,Dawn Stone
+110,9,Oval Stone
+111,9,Odd Keystone
+112,9,Adamant Orb
+113,9,Lustrous Orb
+114,9,Grass Mail
+115,9,Flame Mail
+116,9,Bubble Mail
+117,9,Bloom Mail
+118,9,Tunnel Mail
+119,9,Steel Mail
+120,9,Heart Mail
+121,9,Snow Mail
+122,9,Space Mail
+123,9,Air Mail
+124,9,Mosaic Mail
+125,9,Brick Mail
+126,9,Cheri Berry
+127,9,Chesto Berry
+128,9,Pecha Berry
+129,9,Rawst Berry
+130,9,Aspear Berry
+131,9,Leppa Berry
+132,9,Oran Berry
+133,9,Persim Berry
+134,9,Lum Berry
+135,9,Sitrus Berry
+136,9,Figy Berry
+137,9,Wiki Berry
+138,9,Mago Berry
+139,9,Aguav Berry
+140,9,Iapapa Berry
+141,9,Razz Berry
+142,9,Bluk Berry
+143,9,Nanab Berry
+144,9,Wepear Berry
+145,9,Pinap Berry
+146,9,Pomeg Berry
+147,9,Kelpsy Berry
+148,9,Qualot Berry
+149,9,Hondew Berry
+150,9,Grepa Berry
+151,9,Tamato Berry
+152,9,Cornn Berry
+153,9,Magost Berry
+154,9,Rabuta Berry
+155,9,Nomel Berry
+156,9,Spelon Berry
+157,9,Pamtre Berry
+158,9,Watmel Berry
+159,9,Durin Berry
+160,9,Belue Berry
+161,9,Occa Berry
+162,9,Passho Berry
+163,9,Wacan Berry
+164,9,Rindo Berry
+165,9,Yache Berry
+166,9,Chople Berry
+167,9,Kebia Berry
+168,9,Shuca Berry
+169,9,Coba Berry
+170,9,Payapa Berry
+171,9,Tanga Berry
+172,9,Charti Berry
+173,9,Kasib Berry
+174,9,Haban Berry
+175,9,Colbur Berry
+176,9,Babiri Berry
+177,9,Chilan Berry
+178,9,Liechi Berry
+179,9,Ganlon Berry
+180,9,Salac Berry
+181,9,Petaya Berry
+182,9,Apicot Berry
+183,9,Lansat Berry
+184,9,Starf Berry
+185,9,Enigma Berry
+186,9,Micle Berry
+187,9,Custap Berry
+188,9,Jaboca Berry
+189,9,Rowap Berry
+190,9,Bright Powder
+191,9,White Herb
+192,9,Macho Brace
+193,9,Exp. Share
+194,9,Quick Claw
+195,9,Soothe Bell
+196,9,Mental Herb
+197,9,Choice Band
+198,9,King’s Rock
+199,9,Silver Powder
+200,9,Amulet Coin
+201,9,Cleanse Tag
+202,9,Soul Dew
+203,9,Deep Sea Tooth
+204,9,Deep Sea Scale
+205,9,Smoke Ball
+206,9,Everstone
+207,9,Focus Band
+208,9,Lucky Egg
+209,9,Scope Lens
+210,9,Metal Coat
+211,9,Leftovers
+212,9,Dragon Scale
+213,9,Light Ball
+214,9,Soft Sand
+215,9,Hard Stone
+216,9,Miracle Seed
+217,9,Black Glasses
+218,9,Black Belt
+219,9,Magnet
+220,9,Mystic Water
+221,9,Sharp Beak
+222,9,Poison Barb
+223,9,Never-Melt Ice
+224,9,Spell Tag
+225,9,Twisted Spoon
+226,9,Charcoal
+227,9,Dragon Fang
+228,9,Silk Scarf
+229,9,Up-Grade
+230,9,Shell Bell
+231,9,Sea Incense
+232,9,Lax Incense
+233,9,Lucky Punch
+234,9,Metal Powder
+235,9,Thick Club
+236,9,Stick
+237,9,Red Scarf
+238,9,Blue Scarf
+239,9,Pink Scarf
+240,9,Green Scarf
+241,9,Yellow Scarf
+242,9,Wide Lens
+243,9,Muscle Band
+244,9,Wise Glasses
+245,9,Expert Belt
+246,9,Light Clay
+247,9,Life Orb
+248,9,Power Herb
+249,9,Toxic Orb
+250,9,Flame Orb
+251,9,Quick Powder
+252,9,Focus Sash
+253,9,Zoom Lens
+254,9,Metronome
+255,9,Iron Ball
+256,9,Lagging Tail
+257,9,Destiny Knot
+258,9,Black Sludge
+259,9,Icy Rock
+260,9,Smooth Rock
+261,9,Heat Rock
+262,9,Damp Rock
+263,9,Grip Claw
+264,9,Choice Scarf
+265,9,Sticky Barb
+266,9,Power Bracer
+267,9,Power Belt
+268,9,Power Lens
+269,9,Power Band
+270,9,Power Anklet
+271,9,Power Weight
+272,9,Shed Shell
+273,9,Big Root
+274,9,Choice Specs
+275,9,Flame Plate
+276,9,Splash Plate
+277,9,Zap Plate
+278,9,Meadow Plate
+279,9,Icicle Plate
+280,9,Fist Plate
+281,9,Toxic Plate
+282,9,Earth Plate
+283,9,Sky Plate
+284,9,Mind Plate
+285,9,Insect Plate
+286,9,Stone Plate
+287,9,Spooky Plate
+288,9,Draco Plate
+289,9,Dread Plate
+290,9,Iron Plate
+291,9,Odd Incense
+292,9,Rock Incense
+293,9,Full Incense
+294,9,Wave Incense
+295,9,Rose Incense
+296,9,Luck Incense
+297,9,Pure Incense
+298,9,Protector
+299,9,Electirizer
+300,9,Magmarizer
+301,9,Dubious Disc
+302,9,Reaper Cloth
+303,9,Razor Claw
+304,9,Razor Fang
+305,9,TM01
+306,9,TM02
+307,9,TM03
+308,9,TM04
+309,9,TM05
+310,9,TM06
+311,9,TM07
+312,9,TM08
+313,9,TM09
+314,9,TM10
+315,9,TM11
+316,9,TM12
+317,9,TM13
+318,9,TM14
+319,9,TM15
+320,9,TM16
+321,9,TM17
+322,9,TM18
+323,9,TM19
+324,9,TM20
+325,9,TM21
+326,9,TM22
+327,9,TM23
+328,9,TM24
+329,9,TM25
+330,9,TM26
+331,9,TM27
+332,9,TM28
+333,9,TM29
+334,9,TM30
+335,9,TM31
+336,9,TM32
+337,9,TM33
+338,9,TM34
+339,9,TM35
+340,9,TM36
+341,9,TM37
+342,9,TM38
+343,9,TM39
+344,9,TM40
+345,9,TM41
+346,9,TM42
+347,9,TM43
+348,9,TM44
+349,9,TM45
+350,9,TM46
+351,9,TM47
+352,9,TM48
+353,9,TM49
+354,9,TM50
+355,9,TM51
+356,9,TM52
+357,9,TM53
+358,9,TM54
+359,9,TM55
+360,9,TM56
+361,9,TM57
+362,9,TM58
+363,9,TM59
+364,9,TM60
+365,9,TM61
+366,9,TM62
+367,9,TM63
+368,9,TM64
+369,9,TM65
+370,9,TM66
+371,9,TM67
+372,9,TM68
+373,9,TM69
+374,9,TM70
+375,9,TM71
+376,9,TM72
+377,9,TM73
+378,9,TM74
+379,9,TM75
+380,9,TM76
+381,9,TM77
+382,9,TM78
+383,9,TM79
+384,9,TM80
+385,9,TM81
+386,9,TM82
+387,9,TM83
+388,9,TM84
+389,9,TM85
+390,9,TM86
+391,9,TM87
+392,9,TM88
+393,9,TM89
+394,9,TM90
+395,9,TM91
+396,9,TM92
+397,9,HM01
+398,9,HM02
+399,9,HM03
+400,9,HM04
+401,9,HM05
+402,9,HM06
+403,9,HM07
+404,9,HM08
+405,9,Explorer Kit
+406,9,Loot Sack
+407,9,Rule Book
+408,9,Poké Radar
+409,9,Point Card
+410,9,Journal
+411,9,Seal Case
+412,9,Fashion Case
+413,9,Seal Bag
+414,9,Pal Pad
+415,9,Works Key
+416,9,Old Charm
+417,9,Galactic Key
+418,9,Red Chain
+419,9,Town Map
+420,9,Vs. Seeker
+421,9,Coin Case
+422,9,Old Rod
+423,9,Good Rod
+424,9,Super Rod
+425,9,Sprayduck
+426,9,Poffin Case
+427,9,Bicycle
+428,9,Suite Key
+429,9,Oak’s Letter
+430,9,Lunar Wing
+431,9,Member Card
+432,9,Azure Flute
+433,9,S.S. Ticket
+434,9,Contest Pass
+435,9,Magma Stone
+436,9,Parcel
+437,9,Coupon 1
+438,9,Coupon 2
+439,9,Coupon 3
+440,9,Storage Key
+441,9,Secret Potion
+442,9,Griseous Orb
+443,9,Vs. Recorder
+444,9,Gracidea
+445,9,Secret Key
+446,9,Apricorn Box
+447,9,Berry Pots
+448,9,Squirt Bottle
+449,9,Lure Ball
+450,9,Level Ball
+451,9,Moon Ball
+452,9,Heavy Ball
+453,9,Fast Ball
+454,9,Friend Ball
+455,9,Love Ball
+456,9,Park Ball
+457,9,Sport Ball
+458,9,Red Apricorn
+459,9,Blue Apricorn
+460,9,Yellow Apricorn
+461,9,Green Apricorn
+462,9,Pink Apricorn
+463,9,White Apricorn
+464,9,Black Apricorn
+465,9,Dowsing Machine
+466,9,Rage Candy Bar
+467,9,Red Orb
+468,9,Blue Orb
+469,9,Jade Orb
+470,9,Enigma Stone
+471,9,Unown Report
+472,9,Blue Card
+473,9,Slowpoke Tail
+474,9,Clear Bell
+475,9,Card Key
+476,9,Basement Key
+477,9,Red Scale
+478,9,Lost Item
+479,9,Pass
+480,9,Machine Part
+481,9,Silver Wing
+482,9,Rainbow Wing
+483,9,Mystery Egg
+484,9,GB Sounds
+485,9,Tidal Bell
+486,9,Data Card 01
+487,9,Data Card 02
+488,9,Data Card 03
+489,9,Data Card 04
+490,9,Data Card 05
+491,9,Data Card 06
+492,9,Data Card 07
+493,9,Data Card 08
+494,9,Data Card 09
+495,9,Data Card 10
+496,9,Data Card 11
+497,9,Data Card 12
+498,9,Data Card 13
+499,9,Data Card 14
+500,9,Data Card 15
+501,9,Data Card 16
+502,9,Data Card 17
+503,9,Data Card 18
+504,9,Data Card 19
+505,9,Data Card 20
+506,9,Data Card 21
+507,9,Data Card 22
+508,9,Data Card 23
+509,9,Data Card 24
+510,9,Data Card 25
+511,9,Data Card 26
+512,9,Data Card 27
+513,9,Lock Capsule
+514,9,Photo Album
+515,9,Orange Mail
+516,9,Harbor Mail
+517,9,Glitter Mail
+518,9,Mech Mail
+519,9,Wood Mail
+520,9,Wave Mail
+521,9,Bead Mail
+522,9,Shadow Mail
+523,9,Tropic Mail
+524,9,Dream Mail
+525,9,Fab Mail
+526,9,Retro Mail
+527,9,Mach Bike
+528,9,Acro Bike
+529,9,Wailmer Pail
+530,9,Devon Goods
+531,9,Soot Sack
+532,9,Pokéblock Case
+533,9,Letter
+534,9,Eon Ticket
+535,9,Scanner
+536,9,Go-Goggles
+537,9,Meteorite
+538,9,Rm. 1 Key
+539,9,Rm. 2 Key
+540,9,Rm. 4 Key
+541,9,Rm. 6 Key
+542,9,Devon Scope
+543,9,Oak's Parcel
+544,9,Poké Flute
+545,9,Bike Voucher
+546,9,Gold Teeth
+547,9,Lift Key
+548,9,Silph Scope
+549,9,Fame Checker
+550,9,TM Case
+551,9,Berry Pouch
+552,9,Teachy TV
+553,9,Tri-Pass
+554,9,Rainbow Pass
+555,9,Tea
+556,9,MysticTicket
+557,9,AuroraTicket
+558,9,Powder Jar
+559,9,Ruby
+560,9,Sapphire
+561,9,Magma Emblem
+562,9,Old Sea Map
+563,9,Douse Drive
+564,9,Shock Drive
+565,9,Burn Drive
+566,9,Chill Drive
+567,9,Sweet Heart
+568,9,Greet Mail
+569,9,Favored Mail
+570,9,RSVP Mail
+571,9,Thanks Mail
+572,9,Inquiry Mail
+573,9,Like Mail
+574,9,Reply Mail
+575,9,Bridge Mail S
+576,9,Bridge Mail D
+577,9,Bridge Mail T
+578,9,Bridge Mail V
+579,9,Bridge Mail M
+580,9,Prism Scale
+581,9,Eviolite
+582,9,Float Stone
+583,9,Rocky Helmet
+584,9,Air Balloon
+585,9,Red Card
+586,9,Ring Target
+587,9,Binding Band
+588,9,Absorb Bulb
+589,9,Cell Battery
+590,9,Eject Button
+591,9,Fire Gem
+592,9,Water Gem
+593,9,Electric Gem
+594,9,Grass Gem
+595,9,Ice Gem
+596,9,Fighting Gem
+597,9,Poison Gem
+598,9,Ground Gem
+599,9,Flying Gem
+600,9,Psychic Gem
+601,9,Bug Gem
+602,9,Rock Gem
+603,9,Ghost Gem
+604,9,Dark Gem
+605,9,Steel Gem
+606,9,Health Wing
+607,9,Muscle Wing
+608,9,Resist Wing
+609,9,Genius Wing
+610,9,Clever Wing
+611,9,Swift Wing
+612,9,Pretty Wing
+613,9,Cover Fossil
+614,9,Plume Fossil
+615,9,Liberty Pass
+616,9,Pass Orb
+617,9,Dream Ball
+618,9,Poké Toy
+619,9,Prop Case
+620,9,Dragon Skull
+621,9,Balm Mushroom
+622,9,Big Nugget
+623,9,Pearl String
+624,9,Comet Shard
+625,9,Relic Copper
+626,9,Relic Silver
+627,9,Relic Gold
+628,9,Relic Vase
+629,9,Relic Band
+630,9,Relic Statue
+631,9,Relic Crown
+632,9,Casteliacone
+633,9,Dire Hit 2
+634,9,X Speed 2
+635,9,X Sp. Atk 2
+636,9,X Sp. Def 2
+637,9,X Defense 2
+638,9,X Attack 2
+639,9,X Accuracy 2
+640,9,X Speed 3
+641,9,X Sp. Atk 3
+642,9,X Sp. Def 3
+643,9,X Defense 3
+644,9,X Attack 3
+645,9,X Accuracy 3
+646,9,X Speed 6
+647,9,X Sp. Atk 6
+648,9,X Sp. Def 6
+649,9,X Defense 6
+650,9,X Attack 6
+651,9,X Accuracy 6
+652,9,Ability Urge
+653,9,Item Drop
+654,9,Item Urge
+655,9,Reset Urge
+656,9,Dire Hit 3
+657,9,Light Stone
+658,9,Dark Stone
+659,9,TM93
+660,9,TM94
+661,9,TM95
+662,9,Xtransceiver
+663,9,god stone
+664,9,Gram 1
+665,9,Gram 2
+666,9,Gram 3
+668,9,Dragon Gem
+669,9,Normal Gem
+670,9,Medal Box
+671,9,DNA Splicers
+673,9,Permit
+674,9,Oval Charm
+675,9,Shiny Charm
+676,9,Plasma Card
+677,9,Grubby Hanky
+678,9,Colress Machine
+679,9,Dropped Item
+681,9,Reveal Glass
+682,9,Weakness Policy
+683,9,Assault Vest
+684,9,Pixie Plate
+685,9,Ability Capsule
+686,9,Whipped Dream
+687,9,Sachet
+688,9,Luminous Moss
+689,9,Snowball
+690,9,Safety Goggles
+691,9,Rich Mulch
+692,9,Surprise Mulch
+693,9,Boost Mulch
+694,9,Amaze Mulch
+695,9,Gengarite
+696,9,Gardevoirite
+697,9,Ampharosite
+698,9,Venusaurite
+699,9,Charizardite X
+700,9,Blastoisinite
+701,9,Mewtwonite X
+702,9,Mewtwonite Y
+703,9,Blazikenite
+704,9,Medichamite
+705,9,Houndoominite
+706,9,Aggronite
+707,9,Banettite
+708,9,Tyranitarite
+709,9,Scizorite
+710,9,Pinsirite
+711,9,Aerodactylite
+712,9,Lucarionite
+713,9,Abomasite
+714,9,Kangaskhanite
+715,9,Gyaradosite
+716,9,Absolite
+717,9,Charizardite Y
+718,9,Alakazite
+719,9,Heracronite
+720,9,Mawilite
+721,9,Manectite
+722,9,Garchompite
+723,9,Roseli Berry
+724,9,Kee Berry
+725,9,Maranga Berry
+726,9,Discount Coupon
+727,9,Strange Souvenir
+728,9,Lumiose Galette
+729,9,Jaw Fossil
+730,9,Sail Fossil
+731,9,Fairy Gem
+732,9,Adventure Rules
+733,9,Elevator Key
+734,9,Holo Caster
+735,9,Honor of Kalos
+736,9,Intriguing Stone
+737,9,Lens Case
+738,9,Looker Ticket
+739,9,Mega Ring
+740,9,Power Plant Pass
+741,9,Prof’s Letter
+742,9,Roller Skates
+743,9,Sprinklotad
+744,9,TMV Pass
+745,9,TM96
+746,9,TM97
+747,9,TM98
+748,9,TM99
+749,9,TM100
+760,9,Latiasite
+761,9,Latiosite
+762,9,Common Stone
+763,9,Makeup Bag
+764,9,Travel Trunk
+765,9,Shalour Sable
+768,9,Mega Charm
+769,9,Mega Glove
+770,9,Devon Parts
+772,9,Pokéblock Kit
+773,9,Key to Room 1
+774,9,Key to Room 2
+775,9,Key to Room 4
+776,9,Key to Room 6
+779,9,Devon Scuba Gear
+780,9,Contest Costume
+782,9,Magma Suit
+783,9,Aqua Suit
+784,9,Pair of Tickets
+785,9,Mega Bracelet
+786,9,Mega Pendant
+787,9,Mega Glasses
+788,9,Mega Anchor
+789,9,Mega Stickpin
+790,9,Mega Tiara
+791,9,Mega Anklet
+793,9,Swampertite
+794,9,Sceptilite
+795,9,Sablenite
+796,9,Altarianite
+797,9,Galladite
+798,9,Audinite
+799,9,Metagrossite
+800,9,Sharpedonite
+801,9,Slowbronite
+802,9,Steelixite
+803,9,Pidgeotite
+804,9,Glalitite
+805,9,Diancite
+806,9,Prison Bottle
+807,9,Mega Cuff
+808,9,Cameruptite
+809,9,Lopunnite
+810,9,Salamencite
+811,9,Beedrillite
+814,9,Key Stone
+815,9,Meteorite Shard
+816,9,Eon Flute
+817,9,Normalium Z
+818,9,Firium Z
+819,9,Waterium Z
+820,9,Electrium Z
+821,9,Grassium Z
+822,9,Icium Z
+823,9,Fightinium Z
+824,9,Poisonium Z
+825,9,Groundium Z
+826,9,Flyinium Z
+827,9,Psychium Z
+828,9,Buginium Z
+829,9,Rockium Z
+830,9,Ghostium Z
+831,9,Dragonium Z
+832,9,Darkinium Z
+833,9,Steelium Z
+834,9,Fairium Z
+835,9,Pikanium Z
+836,9,Bottle Cap
+837,9,Gold Bottle Cap
+838,9,Z-Ring
+839,9,Decidium Z
+840,9,Incinium Z
+841,9,Primarium Z
+842,9,Tapunium Z
+843,9,Marshadium Z
+844,9,Aloraichium Z
+845,9,Snorlium Z
+846,9,Eevium Z
+847,9,Mewnium Z
+877,9,Pikashunium Z
+878,9,Forage Bag
+879,9,Fishing Rod
+880,9,Professor’s Mask
+881,9,Festival Ticket
+882,9,Sparkling Stone
+883,9,Adrenaline Orb
+884,9,Zygarde Cube
+885,9,Ice Stone
+886,9,Ride Pager
+887,9,Beast Ball
+888,9,Big Malasada
+889,9,Red Nectar
+890,9,Yellow Nectar
+891,9,Pink Nectar
+892,9,Purple Nectar
+893,9,Sun Flute
+894,9,Moon Flute
+895,9,Enigmatic Card
+896,9,Terrain Extender
+897,9,Protective Pads
+898,9,Electric Seed
+899,9,Psychic Seed
+900,9,Misty Seed
+901,9,Grassy Seed
+902,9,Fighting Memory
+903,9,Flying Memory
+904,9,Poison Memory
+905,9,Ground Memory
+906,9,Rock Memory
+907,9,Bug Memory
+908,9,Ghost Memory
+909,9,Steel Memory
+910,9,Fire Memory
+911,9,Water Memory
+912,9,Grass Memory
+913,9,Electric Memory
+914,9,Psychic Memory
+915,9,Ice Memory
+916,9,Dragon Memory
+917,9,Dark Memory
+918,9,Fairy Memory
+919,9,Bike
+920,9,Storage Key
+921,9,Basement Key
+922,9,Xtransceiver
+923,9,Xtransceiver
+924,9,DNA Splicers
+925,9,DNA Splicers
+926,9,Dropped Item
+927,9,Dropped Item
+928,9,Holo Caster
+929,9,Bike
+930,9,Holo Caster
+931,9,Basement Key
+932,9,Storage Key
+933,9,S.S. Ticket
+934,9,Contest Costume
+935,9,Meteorite
+936,9,Meteorite
+937,9,Meteorite
+938,9,Normalium Z
+939,9,Firium Z
+940,9,Waterium Z
+941,9,Electrium Z
+942,9,Grassium Z
+943,9,Icium Z
+944,9,Fightinium Z
+945,9,Poisonium Z
+946,9,Groundium Z
+947,9,Flyinium Z
+948,9,Psychium Z
+949,9,Buginium Z
+950,9,Rockium Z
+951,9,Ghostium Z
+952,9,Dragonium Z
+953,9,Darkinium Z
+954,9,Steelium Z
+955,9,Fairium Z
+956,9,Pikanium Z
+957,9,Decidium Z
+958,9,Incinium Z
+959,9,Primarium Z
+960,9,Tapunium Z
+961,9,Marshadium Z
+962,9,Aloraichium Z
+963,9,Snorlium Z
+964,9,Eevium Z
+965,9,Mewnium Z
+966,9,Pikashunium Z
+967,9,Solganium Z
+968,9,Lunalium Z
+969,9,Ultranecrozium Z
+970,9,Mimikium Z
+971,9,Lycanium Z
+972,9,Kommonium Z
+973,9,Solganium Z
+974,9,Lunalium Z
+975,9,Ultranecrozium Z
+976,9,Mimikium Z
+977,9,Lycanium Z
+978,9,Kommonium Z
+979,9,Z-Power Ring
+980,9,Pink Petal
+981,9,Orange Petal
+982,9,Blue Petal
+983,9,Red Petal
+984,9,Green Petal
+985,9,Yellow Petal
+986,9,Purple Petal
+987,9,Rainbow Flower
+988,9,Surge Badge
+989,9,N-Solarizer
+990,9,N-Lunarizer
+991,9,N-Solarizer
+992,9,N-Lunarizer
+993,9,Ilima’s Normalium Z
+994,9,Left Poké Ball
+995,9,Roto Hatch
+996,9,Roto Bargain
+997,9,Roto Prize Money
+998,9,Roto Exp. Points
+999,9,Roto Friendship
+1000,9,Roto Encounter
+1001,9,Roto Stealth
+1002,9,Roto HP Restore
+1003,9,Roto PP Restore
+1004,9,Roto Boost
+1005,9,Roto Catch
