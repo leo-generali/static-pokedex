@@ -50,25 +50,19 @@ scripts:
                     {% svg 'arrow', 'app-move-button-arrow h-full w-full transition-fast m-auto fill-current' | safe %}
                   </button>
                 </div>
-                <div class='app-move-description-text col-span-6 hidden mt-2'>
-                  {% if move.flavorText %}
-                    <p>{{ move.flavorText }}</p>
-                  {% else %}
-                    <p>{{ move.effect }}</p>
-                  {% endif %}
-                </div>
-                <div class='app-move-description-info col-span-6 hidden mb-4'>
-                  <ul class=''>
-                    <li><span class='font-bold'>PP:</span> {{ move.pp }}</li>
-                    {% if move.power %}
-                      <li>
-                        <span class='font-bold'>Power:</span> {{ move.power }}
-                        {% if move.type in pokemon.types %}
-                          <span class='font-light'>({{ move.power * 1.5 }} w/STAB)</span>
-                        {% endif %}
-                      </li>
-                    {% endif %}
-                  </ul>
+                <div class='app-move-description hidden col-span-6 mb-4'>
+                    <p class='mb-2'>{% if move.flavorText %}{{ move.flavorText }}{% else %}{{ move.effect }}{% endif %}</p>
+                    <ul class=''>
+                      <li><span class='font-bold'>PP:</span> {{ move.pp }}</li>
+                      {% if move.power %}
+                        <li>
+                          <span class='font-bold'>Power:</span> {{ move.power }}
+                          {% if move.type in pokemon.types %}
+                            <span class='font-light'>({{ move.power * 1.5 }} w/STAB)</span>
+                          {% endif %}
+                        </li>
+                      {% endif %}
+                    </ul>
                 </div>
               </li>
             {% endfor %}
